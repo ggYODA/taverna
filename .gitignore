@@ -1,0 +1,21 @@
+# Armellada Taverna — .gitignore
+
+# Python / Flask backend (not needed for GitHub Pages)
+.venv/
+__pycache__/
+*.pyc
+armellada-taverna/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Temp
+*.tmp
+*.log
