@@ -388,6 +388,11 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---- Load reviews ---- */
     let siteReviewsCache = [];
 
+    // Direct Google Maps link for the restaurant profile
+    const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Armellada+Taverna/@38.0895,23.9795,17z/';
+    // Link that opens the "Write a review" dialog directly
+    const GOOGLE_REVIEW_URL = 'https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece';
+
     async function loadReviews() {
         // No API available (GitHub Pages) — show external-only aggregate
         if (!API_BASE) {
@@ -396,12 +401,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 reviewsList.innerHTML = `
                     <div class="reviews-loading" style="flex-direction:column;gap:8px;text-align:center;">
                         <span style="font-size:1.4rem;">🏛</span>
-                        <span>Отзывы доступны при посещении ресторана<br>или на <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">Google Maps</a></span>
+                        <span>Отзывы доступны при посещении ресторана<br>или на <a href="${GOOGLE_MAPS_URL}" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">Google Maps</a></span>
                     </div>
                 `;
             }
-            // Hide the form when there's no backend
-            if (reviewForm) reviewForm.closest('.review-form-wrapper').style.display = 'none';
+            // Replace the form with a Google Maps review button
+            const formWrapper = reviewForm ? reviewForm.closest('.review-form-wrapper') : null;
+            if (formWrapper) {
+                formWrapper.innerHTML = `
+                    <h3 class="review-form-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        Оставить отзыв
+                    </h3>
+                    <p style="color:var(--text-secondary);margin-bottom:1rem;font-size:0.95rem;">Поделитесь впечатлениями о посещении на Google Maps:</p>
+                    <a href="${GOOGLE_REVIEW_URL}" target="_blank" rel="noopener"
+                       class="btn btn--primary" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Написать отзыв на Google Maps
+                    </a>
+                `;
+            }
             return;
         }
 
