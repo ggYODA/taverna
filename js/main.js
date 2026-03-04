@@ -392,12 +392,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // No API available (GitHub Pages) — show external-only aggregate
         if (!API_BASE) {
             updateAggregateRating([]);
-            if (reviewCount) reviewCount.textContent = '214';
             if (reviewsList) {
                 reviewsList.innerHTML = `
                     <div class="reviews-loading" style="flex-direction:column;gap:8px;text-align:center;">
                         <span style="font-size:1.4rem;">🏛</span>
-                        <span>Отзывы доступны при посещении ресторана<br>или на <a href="https://g.co/kgs/armellada" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">Google Maps</a></span>
+                        <span>Отзывы доступны при посещении ресторана<br>или на <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">Google Maps</a></span>
                     </div>
                 `;
             }
