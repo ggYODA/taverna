@@ -4,7 +4,12 @@
    IntersectionObserver, mobile-first, GitHub Pages fallback
    ============================================ */
 
-document.addEventListener('DOMContentLoaded', () => {
+(function init() {
+    // Если DOM ещё не готов — подождём
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+        return;
+    }
 
     /* ---------- helpers ---------- */
     const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|Opera Mini/i.test(navigator.userAgent)
@@ -15,17 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
        Меняй ТОЛЬКО здесь — всё остальное обновится само.
        ====================================================== */
     const GOOGLE_RATING = 4.6;      // ← Рейтинг с Google Maps
-    const GOOGLE_COUNT  = 331;      // ← Количество отзывов на Google Maps
+    const GOOGLE_COUNT  = 361;      // ← Количество отзывов на Google Maps
     const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece';
 
     /* ---------- PRELOADER ---------- */
     const preloader = document.getElementById('preloader');
 
-    window.addEventListener('load', () => {
+    function hidePreloader() {
         setTimeout(() => {
             if (preloader) preloader.classList.add('hidden');
-        }, 1200);
-    });
+        }, 600);
+    }
+
+    if (document.readyState === 'complete') {
+        hidePreloader();  // Страница уже загружена
+    } else {
+        window.addEventListener('load', hidePreloader);
+    }
 
     /* ---------- DOM refs ---------- */
     const navbar      = document.getElementById('navbar');
@@ -292,4 +303,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     renderGoogleRating();
 
-});
+})();
