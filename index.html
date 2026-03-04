@@ -193,117 +193,154 @@
                 <p class="section-desc">Традиционная греческая кухня из свежих продуктов</p>
             </div>
 
+            <!-- INFO BAR -->
+            <div class="menu-info-bar">
+                <div class="menu-info-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8a8 8 0 0 1 16 0c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Delivery: 14:00 – 23:00</span>
+                </div>
+                <div class="menu-info-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                    <span>10% скидка на праздники</span>
+                </div>
+                <div class="menu-info-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span>Хлеб / обслуживание: 1.00€</span>
+                </div>
+            </div>
+
             <div class="menu-tabs">
-                <button class="menu-tab active" data-category="featured">Фирменные блюда</button>
+                <button class="menu-tab active" data-category="featured">Фото блюд</button>
                 <button class="menu-tab" data-category="fullmenu">Полное меню</button>
             </div>
 
-            <!-- ========== FEATURED DISHES (with photos) ========== -->
+            <!-- ========== FEATURED DISHES (photo gallery) ========== -->
             <div class="menu-category active" id="cat-featured">
                 <div class="menu-grid">
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 072048.png" alt="Fresh catch of the day — grilled fish at Armellada Taverna Nea Makri" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072048.png" alt="Fresh catch of the day on ice — Armellada Taverna Nea Makri" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Catch of the day</h3>
-                            <p class="menu-card-desc">Свежая рыба дня на льду: дорадо, сибас и др. Прямо с лодки рыбаков — каждый день новый улов</p>
+                            <h3>Fresh Fish / Свежий улов</h3>
+                            <p class="menu-card-desc">Свежая рыба на льду: дорадо, сибас, зубан, барабулька и др.</p>
                             <span class="menu-card-price">45–60€/кг</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071852.png" alt="Assorted Greek mezze appetizers at Armellada Taverna" loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <h3>Assorted Greek Dips</h3>
-                            <p class="menu-card-desc">Дзадзики, тарамасалата, фава, тирокафтери</p>
-                            <span class="menu-card-price">5.50€</span>
-                        </div>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071831.png" alt="Grilled octopus — signature dish at Armellada Taverna Nea Makri" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071831.png" alt="Grilled octopus with fava puree — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
                             <h3>Grilled Octopus</h3>
                             <p class="menu-card-desc">Осьминог на гриле с пюре из фавы</p>
-                            <span class="menu-card-price">14.50€</span>
-                        </div>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071837.png" alt="Grilled calamari at Greek taverna Armellada, Nea Makri" loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <h3>Grilled Calamari</h3>
-                            <p class="menu-card-desc">Кальмар на гриле с лимонно-масляным соусом</p>
-                            <span class="menu-card-price">13.00€</span>
-                        </div>
-                    </div>
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 072158.png" alt="Fresh sea scallops at Armellada Taverna Greek seafood restaurant" loading="lazy">
-                        </div>
-                        <div class="menu-card-body">
-                            <h3>Scallops</h3>
-                            <p class="menu-card-desc">Морские гребешки в раковинах, 4 шт.</p>
                             <span class="menu-card-price">15.00€</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071936.png" alt="Traditional Greek village salad (horiatiki) at Armellada Taverna" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071837.png" alt="Grilled calamari with fava at Armellada Greek taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Village Salad</h3>
-                            <p class="menu-card-desc">Греческий салат с мягким сыром</p>
+                            <h3>Grilled Calamari</h3>
+                            <p class="menu-card-desc">Кальмар на гриле, подаётся с фавой (300гр)</p>
+                            <span class="menu-card-price">12.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071844.png" alt="Mussels saganaki in tomato sauce with feta — Armellada" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Mussels Saganaki</h3>
+                            <p class="menu-card-desc">Мидии саганаки в томатном соусе с фетой</p>
                             <span class="menu-card-price">8.50€</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071907.png" alt="Cretan dakos salad with tomatoes and feta at Armellada Taverna" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072158.png" alt="Sea scallops in shells — Armellada Taverna seafood" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Dakos</h3>
-                            <p class="menu-card-desc">Критский салат на сухаре с томатами и мизифрой</p>
-                            <span class="menu-card-price">7.50€</span>
+                            <h3>Scallops Shells</h3>
+                            <p class="menu-card-desc">Морские гребешки в ракушке</p>
+                            <span class="menu-card-price">3.50€/шт</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071732.png" alt="Seafood risotto at Armellada Taverna Nea Makri" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071852.png" alt="Traditional Greek tzatziki and dips — Armellada" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Risotto frutti di mare</h3>
+                            <h3>Tzatziki & Dips</h3>
+                            <p class="menu-card-desc">Дзадзики, дзадзики со свеклой и другие соусы</p>
+                            <span class="menu-card-price">4.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071936.png" alt="Traditional Greek village salad (horiatiki) — Armellada" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Greek Salad</h3>
+                            <p class="menu-card-desc">Греческий салат — большой / маленький</p>
+                            <span class="menu-card-price">6.50€ / 4.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071907.png" alt="Cretan dakos salad with tomatoes, feta — Armellada" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Dakos Salad</h3>
+                            <p class="menu-card-desc">Критский салат Дакос на сухаре</p>
+                            <span class="menu-card-price">6.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071732.png" alt="Seafood risotto frutti di mare — Armellada Taverna" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Risotto Frutti di Mare</h3>
                             <p class="menu-card-desc">Ризотто с морепродуктами</p>
                             <span class="menu-card-price">16.00€</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071816.png" alt="Seafood linguine pasta at Armellada Greek restaurant" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071816.png" alt="Linguine frutti di mare — Armellada seafood pasta" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Linguine frutti di mare</h3>
+                            <h3>Linguine Frutti di Mare</h3>
                             <p class="menu-card-desc">Лингвини с морепродуктами</p>
                             <span class="menu-card-price">17.00€</span>
                         </div>
                     </div>
                     <div class="menu-card">
-                        <div class="menu-card-img">
-                            <img src="images/Screenshot 2026-02-27 071802.png" alt="Greek wine list at Armellada Taverna — local and regional wines" loading="lazy">
-                        </div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072204.png" alt="Handmade pork souvlaki at Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Wine Selection</h3>
-                            <p class="menu-card-desc">Локальные вина: белое, розовое, красное</p>
+                            <h3>Pork Souvlaki</h3>
+                            <p class="menu-card-desc">Свиной сувлаки ручной работы (3×120гр)</p>
+                            <span class="menu-card-price">8.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072136.png" alt="Handmade dolma — vine leaf rolls at Armellada" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Dolmadakia</h3>
+                            <p class="menu-card-desc">Долма ручной работы с фетой</p>
+                            <span class="menu-card-price">5.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072111.png" alt="Fried zucchini rolls with feta — Armellada" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Zucchini Rolls</h3>
+                            <p class="menu-card-desc">Рулетики из цуккини с фетой</p>
+                            <span class="menu-card-price">5.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072118.png" alt="Grilled potatoes at Armellada Taverna" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Grilled Potatoes</h3>
+                            <p class="menu-card-desc">Картофель на гриле</p>
+                            <span class="menu-card-price">4.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071802.png" alt="Greek wine and beer selection at Armellada Taverna" loading="lazy"></div>
+                        <div class="menu-card-body">
+                            <h3>Wine & Beer</h3>
+                            <p class="menu-card-desc">Вино, пиво, узо, ципуро</p>
+                            <span class="menu-card-price">от 1.50€</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ========== FULL MENU (one sheet, all categories) ========== -->
+            <!-- ========== FULL MENU (all categories) ========== -->
             <div class="menu-category" id="cat-fullmenu">
                 <div class="menu-full-sheet">
 
@@ -311,402 +348,226 @@
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            <h3>Блюда дня / Dishes of the Day</h3>
+                            <h3>🕒 Блюда дня / Dishes of the Day</h3>
                         </div>
                         <p class="menu-sheet-note">Подаются с 12:00 до 17:00 · Πιάτα ημέρας</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Sea food moussaka</span>
-                                <span class="menu-list-desc">Мусака с морепродуктами</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">11.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Fish soup</span>
-                                <span class="menu-list-desc">Рыбный суп</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">13.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Mousaka</span>
-                                <span class="menu-list-desc">Классическая мясная мусака</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">9.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Chicken soup</span>
-                                <span class="menu-list-desc">Куриный суп</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">9.00€</span>
-                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sea food moussaka</span><span class="menu-list-desc">Мусака с морепродуктами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">11.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fish soup</span><span class="menu-list-desc">Рыбный суп</span></div><span class="menu-list-dots"></span><span class="menu-list-price">13.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Mousaka / eggplant casserole</span><span class="menu-list-desc">Классическая мусака / запеканка с баклажанами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Chicken soup</span><span class="menu-list-desc">Куриный суп</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.00€</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 2. Свежий улов -->
+                    <!-- 2. Свежая рыба — цена за кг -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16s1-4 5-4 5 4 5 4"/><path d="M12 16s1-4 5-4 5 4 5 4"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-                            <h3>Свежий улов / Fresh Fish</h3>
+                            <h3>🐟 Свежая рыба / Fresh Fish — per Kilo</h3>
                         </div>
-                        <p class="menu-sheet-note">Рыба с утреннего улова · Φρέσκα Ψάρια</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Catch of the day</span>
-                                <span class="menu-list-desc">Свежая рыба дня: дорадо, сибас и др.</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">45–60€/кг</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Red Mullet</span>
-                                <span class="menu-list-desc">Барабулька жареная или на гриле</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">16.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Fried Little Fish / Gavros</span>
-                                <span class="menu-list-desc">Мелкая жареная рыбка «Гаврос»</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.50€</span>
-                        </div>
+                        <p class="menu-sheet-note">Улов дня на льду · Φρέσκα Ψάρια</p>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sea bream / Дорадо</span></div><span class="menu-list-dots"></span><span class="menu-list-price">58.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sea bass / Сибас</span></div><span class="menu-list-dots"></span><span class="menu-list-price">45.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Dentex / Зубан</span></div><span class="menu-list-dots"></span><span class="menu-list-price">60.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Rofos / Гроупер</span></div><span class="menu-list-dots"></span><span class="menu-list-price">60.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Scorpion fish / Скорпена</span></div><span class="menu-list-dots"></span><span class="menu-list-price">60.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tongue fish / Морской язык</span></div><span class="menu-list-dots"></span><span class="menu-list-price">60.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Red mullet / Барабулька</span></div><span class="menu-list-dots"></span><span class="menu-list-price">58.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Cod fish / Треска</span></div><span class="menu-list-dots"></span><span class="menu-list-price">55.00€/кг</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sword fish / Рыба-меч</span></div><span class="menu-list-dots"></span><span class="menu-list-price">45.00€/кг</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 3. Закуски -->
+                    <!-- 3. Свежие морепродукты -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
-                            <h3>Закуски / Appetizers</h3>
+                            <h3>🦪 Морепродукты / Fresh Seafood</h3>
                         </div>
-                        <p class="menu-sheet-note">Ορεκτικά</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Assorted Greek Dips</span>
-                                <span class="menu-list-desc">Дзадзики, тарамасалата, фава, тирокафтери</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">5.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Grilled Octopus</span>
-                                <span class="menu-list-desc">Осьминог на гриле с пюре из фавы</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">14.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Grilled Calamari</span>
-                                <span class="menu-list-desc">Кальмар на гриле с лимонно-масляным соусом</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">13.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Scallops</span>
-                                <span class="menu-list-desc">Морские гребешки в раковинах, 4 шт.</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">15.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Fried Calamari</span>
-                                <span class="menu-list-desc">Жареные кальмары</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">11.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Grilled Shrimps</span>
-                                <span class="menu-list-desc">Креветки на гриле</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">15.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Saganaki Shrimps</span>
-                                <span class="menu-list-desc">Креветки в томатном соусе с сыром фета</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">16.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Steamed Mussels</span>
-                                <span class="menu-list-desc">Мидии на пару в винном соусе</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">12.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Saganaki Mussels</span>
-                                <span class="menu-list-desc">Мидии саганаки с горчицей и фетой</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">13.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">French Fries</span>
-                                <span class="menu-list-desc">Картофель фри</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">4.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Garlic Bread</span>
-                                <span class="menu-list-desc">Чесночный хлеб</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">3.50€</span>
-                        </div>
+                        <p class="menu-sheet-note">Θαλασσινά</p>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried calamari</span><span class="menu-list-desc">Жареные кальмары</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled calamari (300гр)</span><span class="menu-list-desc">Кальмар на гриле, подаётся с фавой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Calamari stuffed with feta (350гр)</span><span class="menu-list-desc">Кальмар, фаршированный фетой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">13.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried baby calamari</span><span class="menu-list-desc">Мелкие жареные кальмары</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled octopus</span><span class="menu-list-desc">Осьминог на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">15.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sun dried octopus (traditional)</span><span class="menu-list-desc">Вяленый осьминог на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">16.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried mussels</span><span class="menu-list-desc">Жареные мидии</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Mussels saganaki</span><span class="menu-list-desc">Мидии саганаки в томатном соусе с фетой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Mussels steamed (with lemon)</span><span class="menu-list-desc">Мидии в ракушках на пару с лимоном</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Scallops shells (1 шт.)</span><span class="menu-list-desc">Морские гребешки в ракушке</span></div><span class="menu-list-dots"></span><span class="menu-list-price">3.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Shrimps pane</span><span class="menu-list-desc">Креветки в панировке со сладким соусом чили</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Shrimps sauté (250гр)</span><span class="menu-list-desc">Креветки соте со сливочным маслом и узо</span></div><span class="menu-list-dots"></span><span class="menu-list-price">17.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled shrimps (250гр)</span><span class="menu-list-desc">Креветки на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">17.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Shrimps saganaki (250гр)</span><span class="menu-list-desc">Креветки саганаки</span></div><span class="menu-list-dots"></span><span class="menu-list-price">17.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fish filet «Armellada»</span><span class="menu-list-desc">Рыбное филе «Армеллада»</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Shrimps / Crayfish (1кг)</span><span class="menu-list-desc">Креветки или раки — любой вес</span></div><span class="menu-list-dots"></span><span class="menu-list-price">60.00€/кг</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 4. Салаты -->
+                    <!-- 4. Свежая рыба — порции -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16s1-4 5-4 5 4 5 4"/><path d="M12 16s1-4 5-4 5 4 5 4"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                            <h3>🎣 Свежая рыба — порции / Fresh Fish Portions</h3>
+                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sea bream portion</span><span class="menu-list-desc">Дорадо, порция</span></div><span class="menu-list-dots"></span><span class="menu-list-price">15.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled sardines</span><span class="menu-list-desc">Сардины на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled sardines «married»</span><span class="menu-list-desc">Сдвоенное филе сардин на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Sardella «Armellada»</span><span class="menu-list-desc">Сардины, фаршированные вялеными томатами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried anchovy</span><span class="menu-list-desc">Жареные анчоусы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tuna fish souvlaki (handmade)</span><span class="menu-list-desc">Сувлаки из тунца ручной работы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">15.00€</span></div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 5. Салаты -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V11"/><path d="M4 11c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-                            <h3>Салаты / Salads</h3>
+                            <h3>🥗 Салаты / Fresh Salads</h3>
                         </div>
                         <p class="menu-sheet-note">Σαλάτες</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Village Salad with Soft Cheese</span>
-                                <span class="menu-list-desc">Греческий салат с мягким сыром</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Dakos</span>
-                                <span class="menu-list-desc">Критский салат на сухаре с томатами и мизифрой</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">7.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Green Salad</span>
-                                <span class="menu-list-desc">Зеленый салат с медовой заправкой</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Boiled Vegetables</span>
-                                <span class="menu-list-desc">Отварные сезонные овощи</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">6.00€</span>
-                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Cucumber-tomato salad</span><span class="menu-list-desc">Салат из огурцов и помидоров</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Greek salad (big / small)</span><span class="menu-list-desc">Греческий салат</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.50€ / 4.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Wild rock samphire</span><span class="menu-list-desc">Критмум / Морской укроп</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Rocket parmezan</span><span class="menu-list-desc">Салат с рукколой и пармезаном</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Armellada salad (big / small)</span><span class="menu-list-desc">Фирменный салат «Армеллада»</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€ / 5.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Octopus salad</span><span class="menu-list-desc">Салат с осьминогом</span></div><span class="menu-list-dots"></span><span class="menu-list-price">13.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Beetroot</span><span class="menu-list-desc">Свекла с йогуртом и грецкими орехами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Rocket / Lettuce</span><span class="menu-list-desc">Руккола / Латук</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Boiled greens</span><span class="menu-list-desc">Отварная зелень</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Dakos salad</span><span class="menu-list-desc">Критский салат Дакос</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.00€</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 5. Паста и Ризотто -->
+                    <!-- 6. Закуски и соусы -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+                            <h3>🫒 Закуски и соусы / Appetizers &amp; Dips</h3>
+                        </div>
+                        <p class="menu-sheet-note">Ορεκτικά · Ручная работа</p>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tzatziki / Beetroot tzatziki</span><span class="menu-list-desc">Дзадзики / Дзадзики со свеклой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Traditional eggplant salad</span><span class="menu-list-desc">Салат из баклажанов</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Cheese sauce (Tirokafteri)</span><span class="menu-list-desc">Сырный соус / Тирокафтери</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fish roe salad (Taramosalata)</span><span class="menu-list-desc">Тарамасалата</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Garlic sauce (Skordalia)</span><span class="menu-list-desc">Скордалия</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tuna / Crab salad</span><span class="menu-list-desc">Салат с тунцом / Крабовый салат</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.00€ / 5.80€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fava</span><span class="menu-list-desc">Фава</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 7. Сыры -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                            <h3>🧀 Сыры / Cheese</h3>
+                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Feta / Grilled feta</span><span class="menu-list-desc">Фета / Фета на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€ / 5.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried feta</span><span class="menu-list-desc">Жареная фета с кунжутом и мёдом</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Bouyourdi</span><span class="menu-list-desc">Запечённая фета с томатами и перцем</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Cheese saganaki</span><span class="menu-list-desc">Сыр саганаки с инжирным джемом</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Haloumi / Talagani grilled</span><span class="menu-list-desc">Халлуми / Талагани на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.50€ / 6.00€</span></div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 8. Овощи -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V11"/><path d="M4 11c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+                            <h3>🍆 Овощи / Veggies</h3>
+                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fresh fried potatoes</span><span class="menu-list-desc">Картофель фри</span></div><span class="menu-list-dots"></span><span class="menu-list-price">3.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled potatoes</span><span class="menu-list-desc">Картофель на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried zucchini chips</span><span class="menu-list-desc">Чипсы из цуккини</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried zucchini rolls with feta</span><span class="menu-list-desc">Рулетики из цуккини с фетой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Grilled eggplant</span><span class="menu-list-desc">Баклажан на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Fried / Grilled peppers</span><span class="menu-list-desc">Жареные / Перцы на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">3.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Green chili / Florina peppers</span><span class="menu-list-desc">Острый перец / Перцы Флорина</span></div><span class="menu-list-dots"></span><span class="menu-list-price">1.50€ / 4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Dolmadakia (handmade)</span><span class="menu-list-desc">Долма ручной работы с фетой</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Variety of fried/grilled veggies</span><span class="menu-list-desc">Ассорти: среднее / большое / на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€ / 6.00€ / 6.50€</span></div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 9. Соленая рыба -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16s1-4 5-4 5 4 5 4"/><path d="M12 16s1-4 5-4 5 4 5 4"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                            <h3>🐟 Солёная рыба / Salty Dishes</h3>
+                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Marinated anchovies</span><span class="menu-list-desc">Маринованные анчоусы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Smoked mackerel</span><span class="menu-list-desc">Копчёная скумбрия</span></div><span class="menu-list-dots"></span><span class="menu-list-price">7.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Marinated bonito</span><span class="menu-list-desc">Маринованный пеламида</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.50€</span></div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 10. Паста и Ризотто -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
-                            <h3>Паста и Ризотто / Pasta & Risotto</h3>
+                            <h3>🍝 Паста и Ризотто / Pasta &amp; Risotto</h3>
                         </div>
                         <p class="menu-sheet-note">Ζυμαρικά και Ριζότο</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Risotto frutti di mare</span>
-                                <span class="menu-list-desc">Ризотто с морепродуктами</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">16.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Linguine frutti di mare</span>
-                                <span class="menu-list-desc">Лингвини с морепродуктами</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">17.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Risotto ai fungi</span>
-                                <span class="menu-list-desc">Ризотто с грибами и трюфельным маслом</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">12.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Linguine with shrimps</span>
-                                <span class="menu-list-desc">Лингвини с креветками</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">17.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Spaghetti Napolitana</span>
-                                <span class="menu-list-desc">Спагетти с томатным соусом</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">6.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Spaghetti Bolognese</span>
-                                <span class="menu-list-desc">Спагетти с мясным фаршем</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">7.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Creamy spaghetti</span>
-                                <span class="menu-list-desc">Паста в сливочном соусе с грибами и курицей</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">7.50€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pasta with lobster</span>
-                                <span class="menu-list-desc">Паста с лобстером (цена за кг)</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">90.00€</span>
-                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Risotto ai fungi</span><span class="menu-list-desc">Ризотто с грибами и трюфельным маслом</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Risotto frutti di mare</span><span class="menu-list-desc">Ризотто с морепродуктами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">16.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Spaghetti Napolitana</span><span class="menu-list-desc">Спагетти Неаполитано</span></div><span class="menu-list-dots"></span><span class="menu-list-price">6.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Spaghetti Bolognese</span><span class="menu-list-desc">Спагетти Болоньезе</span></div><span class="menu-list-dots"></span><span class="menu-list-price">7.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Creamy spaghetti</span><span class="menu-list-desc">Сливочный соус с грибами и курицей</span></div><span class="menu-list-dots"></span><span class="menu-list-price">7.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Linguine frutti di mare</span><span class="menu-list-desc">Лингвини с морепродуктами</span></div><span class="menu-list-dots"></span><span class="menu-list-price">17.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Linguine with shrimps</span><span class="menu-list-desc">Лингвини с креветками</span></div><span class="menu-list-dots"></span><span class="menu-list-price">17.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Pasta with lobster</span><span class="menu-list-desc">Паста с лобстером</span></div><span class="menu-list-dots"></span><span class="menu-list-price">90.00€/кг</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 6. Мясо на гриле -->
+                    <!-- 11. Мясо на гриле -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 11h.01"/><path d="M11 15h.01"/><path d="M16 16h.01"/><path d="M2 16l20 6-6-20A20 20 0 0 0 2 16"/></svg>
-                            <h3>Мясо на гриле / Meat on the Grill</h3>
+                            <h3>🥩 Мясо на гриле / Meat on the Grill</h3>
                         </div>
                         <p class="menu-sheet-note">Κρεατικά σχάρας</p>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pork steak</span>
-                                <span class="menu-list-desc">Свиной стейк, 350гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pork steak Tomahawk</span>
-                                <span class="menu-list-desc">Стейк Томагавк, 400-500гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">14.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pork Souvlaki — handmade</span>
-                                <span class="menu-list-desc">Свиной сувлаки, 3 x 120гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Chicken Souvlaki — handmade</span>
-                                <span class="menu-list-desc">Куриный сувлаки, 3 x 120гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Burger (handmade)</span>
-                                <span class="menu-list-desc">Бургер, 400гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Burger stuffed with cheese</span>
-                                <span class="menu-list-desc">Бургер с сыром, 400гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">10.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Chicken filet</span>
-                                <span class="menu-list-desc">Куриное филе на гриле, 300гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">8.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pork filet on the grill</span>
-                                <span class="menu-list-desc">Свиное филе на гриле</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">10.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Pork filet sauté</span>
-                                <span class="menu-list-desc">Свиное филе соте с грибами и соусом на узо</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">12.00€</span>
-                        </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Chicken / Pork straw (Kalamaki)</span>
-                                <span class="menu-list-desc">Шашлычок, 120гр</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price">2.00€</span>
-                        </div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Pork steak (350гр)</span><span class="menu-list-desc">Свиной стейк</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tomahawk (600-700гр)</span><span class="menu-list-desc">Стейк Томагавк</span></div><span class="menu-list-dots"></span><span class="menu-list-price">15.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Pork souvlaki — handmade (3×120гр)</span><span class="menu-list-desc">Свиной сувлаки ручной работы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Chicken souvlaki — handmade (3×120гр)</span><span class="menu-list-desc">Куриный сувлаки ручной работы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Burger (400гр)</span><span class="menu-list-desc">Бургер / Бифштекс ручной работы</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Burger stuffed with cheese (400гр)</span><span class="menu-list-desc">Бургер с сыром внутри</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Chicken filet (300гр)</span><span class="menu-list-desc">Куриное филе</span></div><span class="menu-list-dots"></span><span class="menu-list-price">8.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Pork filet on the grill</span><span class="menu-list-desc">Свиное филе на гриле</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Pork filet sauté</span><span class="menu-list-desc">Свиное филе соте с грибами и соусом на узо</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Chicken / Pork straw (120гр)</span><span class="menu-list-desc">Шашлычок «Каламаки»</span></div><span class="menu-list-dots"></span><span class="menu-list-price">2.00€</span></div>
                     </div>
 
                     <div class="menu-sheet-divider"></div>
 
-                    <!-- 7. Напитки -->
+                    <!-- 12. Напитки -->
                     <div class="menu-sheet-section">
                         <div class="menu-sheet-header">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8l-1 14H9L8 2z"/><path d="M4 22h16"/><path d="M12 16v6"/></svg>
-                            <h3>Напитки / Drinks</h3>
+                            <h3>🥂 Напитки / Drinks &amp; Alcohol</h3>
                         </div>
-                        <div class="menu-list-item">
-                            <div class="menu-list-info">
-                                <span class="menu-list-name">Wine Selection</span>
-                                <span class="menu-list-desc">Локальные вина: белое, розовое, красное</span>
-                            </div>
-                            <span class="menu-list-dots"></span>
-                            <span class="menu-list-price"></span>
-                        </div>
+                        <p class="menu-sheet-note">Ποτά</p>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Water</span><span class="menu-list-desc">Вода</span></div><span class="menu-list-dots"></span><span class="menu-list-price">1.80€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Soda / Cola / Sprite / Juice / Ice Tea</span><span class="menu-list-desc">Безалкогольные напитки</span></div><span class="menu-list-dots"></span><span class="menu-list-price">2.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Beer 0.5L</span><span class="menu-list-desc">Mythos / Alfa / Fix / Mamos</span></div><span class="menu-list-dots"></span><span class="menu-list-price">3.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Beer 0.5L (premium)</span><span class="menu-list-desc">Corona Extra / Kaizer</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Ouzo 0.2L</span><span class="menu-list-desc">Plomari / Idoniko / Mini / 12</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Ouzo 0.2L (premium)</span><span class="menu-list-desc">Varvagianni / Kazanisto</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tsipouro 0.2L</span><span class="menu-list-desc">Apostolaki</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Tsipouro 0.2L (premium)</span><span class="menu-list-desc">Idoniko / Tsilili / Babajim</span></div><span class="menu-list-dots"></span><span class="menu-list-price">12.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Vodka / Whiskey (50мл)</span><span class="menu-list-desc">Крепкий алкоголь</span></div><span class="menu-list-dots"></span><span class="menu-list-price">5.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Mastiha / Metaxa (50мл)</span><span class="menu-list-desc">Мастиха / Метакса</span></div><span class="menu-list-dots"></span><span class="menu-list-price">4.00€ / 4.50€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Wine 1L (White / Red / Rosé)</span><span class="menu-list-desc">Домашнее вино</span></div><span class="menu-list-dots"></span><span class="menu-list-price">9.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">White Moschofilero 1L</span><span class="menu-list-desc">Белое Мосхофилеро</span></div><span class="menu-list-dots"></span><span class="menu-list-price">10.00€</span></div>
+                        <div class="menu-list-item"><div class="menu-list-info"><span class="menu-list-name">Wine glass</span><span class="menu-list-desc">Бокал вина</span></div><span class="menu-list-dots"></span><span class="menu-list-price">1.50€</span></div>
                     </div>
 
                 </div>
