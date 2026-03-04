@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|Opera Mini/i.test(navigator.userAgent)
                   || window.innerWidth <= 768;
 
-    /* ---------- Google Maps review data (update manually) ---------- */
-    // >>> ОБНОВЛЯЙТЕ ЭТИ ЗНАЧЕНИЯ вручную по данным Google Maps <<<
-    const GOOGLE_RATING = 4.6;      // Рейтинг с Google Maps
-    const GOOGLE_COUNT  = 128;      // Количество отзывов на Google Maps
+    /* ======================================================
+       GOOGLE MAPS — ЕДИНСТВЕННОЕ МЕСТО ДЛЯ ИЗМЕНЕНИЯ!
+       Меняй ТОЛЬКО здесь — всё остальное обновится само.
+       ====================================================== */
+    const GOOGLE_RATING = 4.6;      // ← Рейтинг с Google Maps
+    const GOOGLE_COUNT  = 321;      // ← Количество отзывов на Google Maps
     const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece';
 
     /* ---------- PRELOADER ---------- */
@@ -249,8 +251,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const starsEl  = document.getElementById('googleStars');
         const totalEl  = document.getElementById('googleTotal');
 
+        // 1. Видимый рейтинг
         if (ratingEl) ratingEl.textContent = GOOGLE_RATING.toFixed(1);
 
+        // 2. Звёздочки
         if (starsEl) {
             const stars = starsEl.querySelectorAll('.rh-star');
             const fullStars = Math.floor(GOOGLE_RATING);
@@ -262,6 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
+        // 3. Текст «N отзывов на Google» (с правильным склонением)
         if (totalEl) {
             const abs = Math.abs(GOOGLE_COUNT) % 100;
             const n1 = abs % 10;
@@ -270,6 +275,19 @@ document.addEventListener('DOMContentLoaded', () => {
             else if (n1 > 1 && n1 < 5) word = 'отзыва';
             else if (n1 === 1) word = 'отзыв';
             totalEl.textContent = GOOGLE_COUNT + ' ' + word + ' на Google';
+        }
+
+        // 4. Автообновление Schema.org JSON-LD (SEO-микроразметка)
+        const schemaScript = document.querySelector('script[type="application/ld+json"]');
+        if (schemaScript) {
+            try {
+                const schema = JSON.parse(schemaScript.textContent);
+                if (schema.aggregateRating) {
+                    schema.aggregateRating.ratingValue = String(GOOGLE_RATING);
+                    schema.aggregateRating.reviewCount = String(GOOGLE_COUNT);
+                    schemaScript.textContent = JSON.stringify(schema);
+                }
+            } catch (e) { /* ignore parse errors */ }
         }
     }
     renderGoogleRating();
