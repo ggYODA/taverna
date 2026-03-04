@@ -812,7 +812,12 @@
         <img src="" alt="" class="lightbox-img" id="lightboxImg">
     </div>
 
-    <script src="js/main.js?v=20260304"></script>
+    <script>
+        // Автозагрузка main.js без кэша — всегда свежая версия
+        var s = document.createElement('script');
+        s.src = 'js/main.js?v=' + Date.now();
+        document.body.appendChild(s);
+    </script>
 
 
 </body>
