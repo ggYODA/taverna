@@ -1,0 +1,32 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Мария",
+      "rating": 5,
+      "text": "Лучшая таверна в Неа Макри! Свежайшие морепродукты и прекрасный вид.",
+      "date": "2026-02-20T18:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Dimitris",
+      "rating": 5,
+      "text": "Εξαιρετικό φαγητό και υπέροχη ατμόσφαιρα. Συνιστώ ανεπιφύλακτα!",
+      "date": "2026-02-22T19:15:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Anna K.",
+      "rating": 4,
+      "text": "Great food, lovely terrace. The grilled octopus was amazing!",
+      "date": "2026-02-25T20:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Nika",
+      "rating": 4,
+      "text": "crazy place with a sea view",
+      "date": "2026-03-01T14:00:16.650146+00:00"
+    }
+  ]
+}

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+
+    <!-- Mobile: iOS / Android / PWA -->
+    <meta name="theme-color" content="#1B3A5C">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Armellada">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO: Title -->
+    <title>Armellada Taverna — Greek Seafood Restaurant in Nea Makri | Ταβέρνα Νέα Μάκρη</title>
+
+    <!-- SEO: Meta Description -->
+    <meta name="description" content="Armellada Taverna — authentic Greek taverna in Nea Makri, Aeroporias 80. Fresh seafood, grilled octopus, local wines & Mediterranean cuisine. Ταβέρνα με φρέσκα θαλασσινά στη Νέα Μάκρη. Book a table: +30 699 442 4276.">
+
+    <!-- SEO: Meta Keywords -->
+    <meta name="keywords" content="Armellada Taverna, Greek taverna Nea Makri, seafood restaurant Nea Makri, ταβέρνα Νέα Μάκρη, εστιατόριο θαλασσινών, Aeroporias 80, Greek cuisine, fish tavern Attica, ψαροταβέρνα, Mediterranean restaurant, best restaurant Nea Makri, grilled octopus, fresh fish Greece, Marathon restaurant, καλύτερο εστιατόριο Νέα Μάκρη">
+
+    <!-- SEO: Robots & Canonical -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Armellada Taverna">
+    <link rel="canonical" href="https://armellada-taverna.gr/">
+
+    <!-- SEO: Geo Meta Tags -->
+    <meta name="geo.region" content="GR-I">
+    <meta name="geo.placename" content="Nea Makri, Marathon, Attica, Greece">
+    <meta name="geo.position" content="38.0864;24.0098">
+    <meta name="ICBM" content="38.0864, 24.0098">
+
+    <!-- SEO: Open Graph (Facebook, messengers) -->
+    <meta property="og:title" content="Armellada Taverna — Greek Seafood Restaurant in Nea Makri">
+    <meta property="og:description" content="Authentic Greek taverna with fresh seafood, local wines and Mediterranean atmosphere. Aeroporias 80, Nea Makri, Greece.">
+    <meta property="og:type" content="restaurant.restaurant">
+    <meta property="og:url" content="https://armellada-taverna.gr/">
+    <meta property="og:image" content="https://armellada-taverna.gr/images/og-cover.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="el_GR">
+    <meta property="og:site_name" content="Armellada Taverna">
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Armellada Taverna — Greek Seafood Restaurant in Nea Makri">
+    <meta name="twitter:description" content="Authentic Greek taverna with fresh seafood, local wines & Mediterranean cuisine. Nea Makri, Greece.">
+    <meta name="twitter:image" content="https://armellada-taverna.gr/images/og-cover.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SEO: Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Armellada Taverna",
+      "alternateName": "Αρμελάδα Ταβέρνα",
+      "image": "https://armellada-taverna.gr/images/og-cover.jpg",
+      "url": "https://armellada-taverna.gr/",
+      "telephone": "+306994424276",
+      "priceRange": "€€",
+      "servesCuisine": ["Greek", "Mediterranean", "Seafood"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Aeroporias 80",
+        "addressLocality": "Nea Makri",
+        "addressRegion": "Attica",
+        "postalCode": "190 05",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.0864,
+        "longitude": 24.0098
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "12:00",
+        "closes": "00:00"
+      },
+      "menu": "https://armellada-taverna.gr/#menu",
+      "acceptsReservations": "True",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "218",
+        "bestRating": "5"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- SVG градиент для полузвёзд -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="halfStarGrad">
+                <stop offset="50%" stop-color="#e8b100"/>
+                <stop offset="50%" stop-color="#d4d4d4"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-spinner"></div>
+            <span class="preloader-text">Armellada</span>
+        </div>
+    </div>
+
+    <!-- WINE SIDE PANELS — постоянные, полупрозрачные -->
+    <div class="wine-panel wine-panel--left">
+        <img src="images/Screenshot 2026-02-27 071802.png" alt="Greek wine selection at Armellada Taverna Nea Makri">
+    </div>
+    <div class="wine-panel wine-panel--right">
+        <img src="images/Screenshot 2026-02-27 071809.png" alt="Local Greek wines served at Armellada Taverna">
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="navbar-logo">
+                <img src="images/Screenshot 2026-02-27 072204.png" alt="Armellada Taverna logo — Greek restaurant Nea Makri" class="logo-img">
+                <span class="logo-text">Armellada</span>
+            </a>
+            <button class="navbar-toggle" id="navToggle" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="navbar-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Главная</a></li>
+                <li><a href="#menu" class="nav-link">Меню</a></li>
+                <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                <li><a href="#about" class="nav-link">О нас</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+                <li>
+                    <a href="tel:+306994424276" class="nav-link nav-link--call">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Позвонить
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <img src="images/Screenshot 2026-02-27 072118.png" alt="Armellada Taverna — Greek seafood restaurant interior in Nea Makri, Greece" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Неа Макри, Греция
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Armellada</span>
+                <span class="hero-title-line hero-title-line--accent">Taverna</span>
+                <span class="sr-only">— Greek Seafood Restaurant in Nea Makri, Greece | Ελληνική Ταβέρνα Νέα Μάκρη</span>
+            </h1>
+            <p class="hero-subtitle">Настоящая греческая кухня с видом на море.<br>Свежие морепродукты, местные вина и атмосфера Средиземноморья.</p>
+            <div class="hero-actions">
+                <a href="tel:+306994424276" class="btn btn--primary btn--round">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Забронировать стол
+                </a>
+                <a href="#menu" class="btn btn--outline btn--round">
+                    Посмотреть меню
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <span>Листайте</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Меню</span>
+                <h2 class="section-title">Our Menu — Fresh Seafood & Greek Cuisine</h2>
+                <p class="section-desc">Традиционная греческая кухня из свежих продуктов</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="featured">Фирменные блюда</button>
+                <button class="menu-tab" data-category="fullmenu">Полное меню</button>
+            </div>
+
+            <!-- ========== FEATURED DISHES (with photos) ========== -->
+            <div class="menu-category active" id="cat-featured">
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 072048.png" alt="Fresh catch of the day — grilled fish at Armellada Taverna Nea Makri" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Catch of the day</h3>
+                            <p class="menu-card-desc">Свежая рыба дня на льду: дорадо, сибас и др. Прямо с лодки рыбаков — каждый день новый улов</p>
+                            <span class="menu-card-price">45–60€/кг</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071852.png" alt="Assorted Greek mezze appetizers at Armellada Taverna" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Assorted Greek Dips</h3>
+                            <p class="menu-card-desc">Дзадзики, тарамасалата, фава, тирокафтери</p>
+                            <span class="menu-card-price">5.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071831.png" alt="Grilled octopus — signature dish at Armellada Taverna Nea Makri" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Grilled Octopus</h3>
+                            <p class="menu-card-desc">Осьминог на гриле с пюре из фавы</p>
+                            <span class="menu-card-price">14.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071837.png" alt="Grilled calamari at Greek taverna Armellada, Nea Makri" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Grilled Calamari</h3>
+                            <p class="menu-card-desc">Кальмар на гриле с лимонно-масляным соусом</p>
+                            <span class="menu-card-price">13.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 072158.png" alt="Fresh sea scallops at Armellada Taverna Greek seafood restaurant" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Scallops</h3>
+                            <p class="menu-card-desc">Морские гребешки в раковинах, 4 шт.</p>
+                            <span class="menu-card-price">15.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071936.png" alt="Traditional Greek village salad (horiatiki) at Armellada Taverna" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Village Salad</h3>
+                            <p class="menu-card-desc">Греческий салат с мягким сыром</p>
+                            <span class="menu-card-price">8.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071907.png" alt="Cretan dakos salad with tomatoes and feta at Armellada Taverna" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Dakos</h3>
+                            <p class="menu-card-desc">Критский салат на сухаре с томатами и мизифрой</p>
+                            <span class="menu-card-price">7.50€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071732.png" alt="Seafood risotto at Armellada Taverna Nea Makri" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Risotto frutti di mare</h3>
+                            <p class="menu-card-desc">Ризотто с морепродуктами</p>
+                            <span class="menu-card-price">16.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071816.png" alt="Seafood linguine pasta at Armellada Greek restaurant" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Linguine frutti di mare</h3>
+                            <p class="menu-card-desc">Лингвини с морепродуктами</p>
+                            <span class="menu-card-price">17.00€</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <img src="images/Screenshot 2026-02-27 071802.png" alt="Greek wine list at Armellada Taverna — local and regional wines" loading="lazy">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Wine Selection</h3>
+                            <p class="menu-card-desc">Локальные вина: белое, розовое, красное</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========== FULL MENU (one sheet, all categories) ========== -->
+            <div class="menu-category" id="cat-fullmenu">
+                <div class="menu-full-sheet">
+
+                    <!-- 1. Блюда дня -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <h3>Блюда дня / Dishes of the Day</h3>
+                        </div>
+                        <p class="menu-sheet-note">Подаются с 12:00 до 17:00 · Πιάτα ημέρας</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Sea food moussaka</span>
+                                <span class="menu-list-desc">Мусака с морепродуктами</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">11.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Fish soup</span>
+                                <span class="menu-list-desc">Рыбный суп</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">13.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Mousaka</span>
+                                <span class="menu-list-desc">Классическая мясная мусака</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">9.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Chicken soup</span>
+                                <span class="menu-list-desc">Куриный суп</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">9.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 2. Свежий улов -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16s1-4 5-4 5 4 5 4"/><path d="M12 16s1-4 5-4 5 4 5 4"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                            <h3>Свежий улов / Fresh Fish</h3>
+                        </div>
+                        <p class="menu-sheet-note">Рыба с утреннего улова · Φρέσκα Ψάρια</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Catch of the day</span>
+                                <span class="menu-list-desc">Свежая рыба дня: дорадо, сибас и др.</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">45–60€/кг</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Red Mullet</span>
+                                <span class="menu-list-desc">Барабулька жареная или на гриле</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">16.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Fried Little Fish / Gavros</span>
+                                <span class="menu-list-desc">Мелкая жареная рыбка «Гаврос»</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 3. Закуски -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/></svg>
+                            <h3>Закуски / Appetizers</h3>
+                        </div>
+                        <p class="menu-sheet-note">Ορεκτικά</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Assorted Greek Dips</span>
+                                <span class="menu-list-desc">Дзадзики, тарамасалата, фава, тирокафтери</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">5.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Grilled Octopus</span>
+                                <span class="menu-list-desc">Осьминог на гриле с пюре из фавы</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">14.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Grilled Calamari</span>
+                                <span class="menu-list-desc">Кальмар на гриле с лимонно-масляным соусом</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">13.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Scallops</span>
+                                <span class="menu-list-desc">Морские гребешки в раковинах, 4 шт.</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">15.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Fried Calamari</span>
+                                <span class="menu-list-desc">Жареные кальмары</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">11.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Grilled Shrimps</span>
+                                <span class="menu-list-desc">Креветки на гриле</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">15.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Saganaki Shrimps</span>
+                                <span class="menu-list-desc">Креветки в томатном соусе с сыром фета</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">16.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Steamed Mussels</span>
+                                <span class="menu-list-desc">Мидии на пару в винном соусе</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">12.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Saganaki Mussels</span>
+                                <span class="menu-list-desc">Мидии саганаки с горчицей и фетой</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">13.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">French Fries</span>
+                                <span class="menu-list-desc">Картофель фри</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">4.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Garlic Bread</span>
+                                <span class="menu-list-desc">Чесночный хлеб</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">3.50€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 4. Салаты -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10"/><path d="M12 21V11"/><path d="M4 11c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+                            <h3>Салаты / Salads</h3>
+                        </div>
+                        <p class="menu-sheet-note">Σαλάτες</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Village Salad with Soft Cheese</span>
+                                <span class="menu-list-desc">Греческий салат с мягким сыром</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Dakos</span>
+                                <span class="menu-list-desc">Критский салат на сухаре с томатами и мизифрой</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">7.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Green Salad</span>
+                                <span class="menu-list-desc">Зеленый салат с медовой заправкой</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Boiled Vegetables</span>
+                                <span class="menu-list-desc">Отварные сезонные овощи</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">6.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 5. Паста и Ризотто -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                            <h3>Паста и Ризотто / Pasta & Risotto</h3>
+                        </div>
+                        <p class="menu-sheet-note">Ζυμαρικά και Ριζότο</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Risotto frutti di mare</span>
+                                <span class="menu-list-desc">Ризотто с морепродуктами</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">16.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Linguine frutti di mare</span>
+                                <span class="menu-list-desc">Лингвини с морепродуктами</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">17.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Risotto ai fungi</span>
+                                <span class="menu-list-desc">Ризотто с грибами и трюфельным маслом</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">12.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Linguine with shrimps</span>
+                                <span class="menu-list-desc">Лингвини с креветками</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">17.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Spaghetti Napolitana</span>
+                                <span class="menu-list-desc">Спагетти с томатным соусом</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">6.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Spaghetti Bolognese</span>
+                                <span class="menu-list-desc">Спагетти с мясным фаршем</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">7.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Creamy spaghetti</span>
+                                <span class="menu-list-desc">Паста в сливочном соусе с грибами и курицей</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">7.50€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pasta with lobster</span>
+                                <span class="menu-list-desc">Паста с лобстером (цена за кг)</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">90.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 6. Мясо на гриле -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 11h.01"/><path d="M11 15h.01"/><path d="M16 16h.01"/><path d="M2 16l20 6-6-20A20 20 0 0 0 2 16"/></svg>
+                            <h3>Мясо на гриле / Meat on the Grill</h3>
+                        </div>
+                        <p class="menu-sheet-note">Κρεατικά σχάρας</p>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pork steak</span>
+                                <span class="menu-list-desc">Свиной стейк, 350гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pork steak Tomahawk</span>
+                                <span class="menu-list-desc">Стейк Томагавк, 400-500гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">14.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pork Souvlaki — handmade</span>
+                                <span class="menu-list-desc">Свиной сувлаки, 3 x 120гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Chicken Souvlaki — handmade</span>
+                                <span class="menu-list-desc">Куриный сувлаки, 3 x 120гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Burger (handmade)</span>
+                                <span class="menu-list-desc">Бургер, 400гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Burger stuffed with cheese</span>
+                                <span class="menu-list-desc">Бургер с сыром, 400гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">10.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Chicken filet</span>
+                                <span class="menu-list-desc">Куриное филе на гриле, 300гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">8.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pork filet on the grill</span>
+                                <span class="menu-list-desc">Свиное филе на гриле</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">10.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Pork filet sauté</span>
+                                <span class="menu-list-desc">Свиное филе соте с грибами и соусом на узо</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">12.00€</span>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Chicken / Pork straw (Kalamaki)</span>
+                                <span class="menu-list-desc">Шашлычок, 120гр</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price">2.00€</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-sheet-divider"></div>
+
+                    <!-- 7. Напитки -->
+                    <div class="menu-sheet-section">
+                        <div class="menu-sheet-header">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2h8l-1 14H9L8 2z"/><path d="M4 22h16"/><path d="M12 16v6"/></svg>
+                            <h3>Напитки / Drinks</h3>
+                        </div>
+                        <div class="menu-list-item">
+                            <div class="menu-list-info">
+                                <span class="menu-list-name">Wine Selection</span>
+                                <span class="menu-list-desc">Локальные вина: белое, розовое, красное</span>
+                            </div>
+                            <span class="menu-list-dots"></span>
+                            <span class="menu-list-price"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- REVIEWS SECTION — счётчик + форма + отзывы в реальном времени -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Отзывы</span>
+                <h2 class="section-title">Guest Reviews — Armellada Taverna</h2>
+                <p class="section-desc">Оставьте свой отзыв — мы ценим ваше мнение</p>
+            </div>
+
+            <!-- РЕЙТИНГ + СЧЁТЧИК (единый блок, real-time) -->
+            <div class="reviews-hero-block">
+                <div class="reviews-hero-inner">
+                    <!-- Большой рейтинг -->
+                    <div class="rh-rating">
+                        <span class="rh-rating-number" id="aggregateRating">—</span>
+                        <div class="rh-rating-right">
+                            <div class="rh-stars" id="aggregateStars">
+                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <span class="rh-total" id="aggregateTotal">— отзывов</span>
+                        </div>
+                    </div>
+
+                    <!-- Разделитель -->
+                    <div class="rh-divider"></div>
+
+                    <!-- Счётчик на сайте + Live -->
+                    <div class="rh-site">
+                        <div class="rh-site-count">
+                            <span class="rh-site-number" id="reviewCount">—</span>
+                            <span class="rh-site-label">на сайте</span>
+                        </div>
+                        <div class="rh-live">
+                            <span class="live-dot"></span>
+                            Live
+                        </div>
+                    </div>
+
+                    <!-- Источники -->
+                    <div class="rh-divider"></div>
+                    <div class="rh-sources">
+                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Google</span>
+                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg> TripAdvisor</span>
+                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Сайт</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ФОРМА НОВОГО ОТЗЫВА -->
+            <div class="review-form-wrapper">
+                <h3 class="review-form-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    Оставить отзыв
+                </h3>
+                <form id="reviewForm" class="review-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reviewName">Ваше имя</label>
+                            <input type="text" id="reviewName" name="name" placeholder="Как вас зовут?" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label>Оценка</label>
+                            <div class="star-rating" id="starRating">
+                                <button type="button" class="star-btn" data-rating="1">★</button>
+                                <button type="button" class="star-btn" data-rating="2">★</button>
+                                <button type="button" class="star-btn" data-rating="3">★</button>
+                                <button type="button" class="star-btn" data-rating="4">★</button>
+                                <button type="button" class="star-btn active" data-rating="5">★</button>
+                            </div>
+                            <input type="hidden" id="reviewRating" name="rating" value="5">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Ваш отзыв</label>
+                        <textarea id="reviewText" name="text" placeholder="Расскажите о вашем впечатлении..." required maxlength="500" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--round review-submit-btn" id="reviewSubmitBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        Отправить отзыв
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+
+            <!-- СПИСОК ОТЗЫВОВ (подгружается через API) -->
+            <div class="reviews-list" id="reviewsList">
+                <div class="reviews-loading">
+                    <div class="preloader-spinner" style="width:32px;height:32px;border-width:3px;"></div>
+                    <span>Загрузка отзывов...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">О нас</span>
+                <h2 class="section-title">About Armellada — <em>Authentic Greek Taverna in Nea Makri</em></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        В самом сердце Неа Макри наша таверна предлагает настоящий гастрономический опыт 
+                        с традиционными греческими вкусами и свежими местными продуктами.
+                    </p>
+                    <p>
+                        Мы используем только свежие ингредиенты: рыбу, пойманную сегодня утром, 
+                        оливковое масло с местных рощ и ароматные травы с окрестных холмов.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12c3-6 11-6 14.5-1-3.5 5-11.5 5-14.5-1z"/><path d="M2.5 12C3.5 10 5 9 6.5 12c-1.5 3-3 2-4 0z"/><circle cx="16" cy="11.5" r="1" fill="currentColor"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Свежие морепродукты</strong>
+                                <span>Рыба и морепродукты прямо с рынка</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l-1 8a5 5 0 0 1-3 4.5A5 5 0 0 1 9 10L8 2z"/><path d="M12 14.5V22"/><path d="M8 22h8"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Местные вина</strong>
+                                <span>Лучшие вина греческих виноделен</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C8 16 12 14 20 4"/><ellipse cx="9" cy="13" rx="3" ry="4" transform="rotate(-30 9 13)"/><ellipse cx="15" cy="8" rx="2.5" ry="3.5" transform="rotate(-30 15 8)"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <strong>Греческая традиция</strong>
+                                <span>Рецепты, проверенные поколениями</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-img about-img--1">
+                        <img src="images/Screenshot 2026-02-27 071732.png" alt="Warm dining atmosphere inside Armellada Taverna Nea Makri">
+                    </div>
+                    <div class="about-img about-img--2">
+                        <img src="images/Screenshot 2026-02-27 071753.png" alt="Traditional Greek dishes served at Armellada Taverna">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag">Контакты</span>
+                <h2 class="section-title">Visit Us — Aeroporias 80, Nea Makri</h2>
+                <p class="section-desc">Мы всегда рады гостям</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Адрес</h3>
+                    <p>Aeroporias 80<br>Nea Makri, Marathon<br>190 05 Greece</p>
+                    <a href="https://maps.google.com/?q=Aeroporias+80+Nea+Makri+Marathon+190+05+Greece" target="_blank" class="btn btn--small btn--round">
+                        Открыть карту →
+                    </a>
+                </div>
+                <div class="contact-card contact-card--highlight">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Телефон</h3>
+                    <p class="contact-phone">+30 699 442 4276</p>
+                    <a href="tel:+306994424276" class="btn btn--primary btn--round btn--glow">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        Позвонить сейчас
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Часы работы</h3>
+                    <p>Понедельник — Воскресенье<br>12:00 — 00:00</p>
+                    <span class="contact-status open">
+                        <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
+                        Сейчас открыто
+                    </span>
+                </div>
+            </div>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://maps.google.com/maps?q=Aeroporias+80,+Nea+Makri,+190+05,+Greece&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                    width="100%" height="350" style="border:0; border-radius: 24px;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Screenshot 2026-02-27 072204.png" alt="Armellada Taverna — Greek restaurant Nea Makri footer logo" class="footer-logo-img">
+                    <span class="logo-text">Armellada Taverna</span>
+                </div>
+                <p class="footer-address">Aeroporias 80, Nea Makri, Marathon 190 05, Greece</p>
+                <div class="footer-divider"></div>
+                <p class="footer-copy">&copy; 2026 Armellada Taverna. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>
