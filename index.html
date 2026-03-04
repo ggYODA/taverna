@@ -91,7 +91,7 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.6",
-        "reviewCount": "218",
+        "reviewCount": "128",
         "bestRating": "5"
       }
     }
@@ -717,86 +717,62 @@
 
 
 
-    <!-- REVIEWS SECTION — счётчик + форма + отзывы в реальном времени -->
+    <!-- REVIEWS SECTION — Google Maps only -->
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="section-header section-header--center">
                 <span class="section-tag">Отзывы</span>
                 <h2 class="section-title">Guest Reviews — Armellada Taverna</h2>
-                <p class="section-desc">Оставьте свой отзыв — мы ценим ваше мнение</p>
+                <p class="section-desc">Отзывы наших гостей на Google Maps</p>
             </div>
 
-            <!-- РЕЙТИНГ + СЧЁТЧИК (единый блок, real-time) -->
+            <!-- РЕЙТИНГ GOOGLE MAPS (статический блок) -->
             <div class="reviews-hero-block">
                 <div class="reviews-hero-inner">
-                    <!-- Большой рейтинг -->
+                    <!-- Рейтинг -->
                     <div class="rh-rating">
-                        <span class="rh-rating-number" id="aggregateRating">—</span>
+                        <span class="rh-rating-number" id="googleRating">4.6</span>
                         <div class="rh-rating-right">
-                            <div class="rh-stars" id="aggregateStars">
-                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                                <svg class="rh-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <div class="rh-stars" id="googleStars">
+                                <svg class="rh-star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="rh-star half" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             </div>
-                            <span class="rh-total" id="aggregateTotal">— отзывов</span>
+                            <span class="rh-total" id="googleTotal">128 отзывов на Google</span>
                         </div>
                     </div>
 
-
-
-                    <!-- Источники -->
+                    <!-- Источник -->
                     <div class="rh-divider"></div>
                     <div class="rh-sources">
-                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Google</span>
-                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg> TripAdvisor</span>
-                        <span class="rh-source"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Сайт</span>
+                        <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece" target="_blank" rel="noopener" class="rh-source" style="text-decoration:none;color:inherit;">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Google Maps
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- ФОРМА НОВОГО ОТЗЫВА -->
-            <div class="review-form-wrapper">
+            <!-- CTA: кнопки для Google Maps -->
+            <div class="review-form-wrapper" style="text-align:center;">
                 <h3 class="review-form-title">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                    Оставить отзыв
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Нам важно ваше мнение
                 </h3>
-                <form id="reviewForm" class="review-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="reviewName">Ваше имя</label>
-                            <input type="text" id="reviewName" name="name" placeholder="Как вас зовут?" required maxlength="50">
-                        </div>
-                        <div class="form-group">
-                            <label>Оценка</label>
-                            <div class="star-rating" id="starRating">
-                                <button type="button" class="star-btn" data-rating="1">★</button>
-                                <button type="button" class="star-btn" data-rating="2">★</button>
-                                <button type="button" class="star-btn" data-rating="3">★</button>
-                                <button type="button" class="star-btn" data-rating="4">★</button>
-                                <button type="button" class="star-btn active" data-rating="5">★</button>
-                            </div>
-                            <input type="hidden" id="reviewRating" name="rating" value="5">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="reviewText">Ваш отзыв</label>
-                        <textarea id="reviewText" name="text" placeholder="Расскажите о вашем впечатлении..." required maxlength="500" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--round review-submit-btn" id="reviewSubmitBtn">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        Отправить отзыв
-                    </button>
-                    <div class="form-message" id="formMessage"></div>
-                </form>
-            </div>
-
-            <!-- СПИСОК ОТЗЫВОВ (подгружается через API) -->
-            <div class="reviews-list" id="reviewsList">
-                <div class="reviews-loading">
-                    <div class="preloader-spinner" style="width:32px;height:32px;border-width:3px;"></div>
-                    <span>Загрузка отзывов...</span>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;font-size:0.95rem;max-width:480px;margin-left:auto;margin-right:auto;">Оставьте отзыв на Google Maps — это поможет другим гостям найти нас</p>
+                <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                    <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece" target="_blank" rel="noopener"
+                       class="btn btn--primary btn--round" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        Написать отзыв
+                    </a>
+                    <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece" target="_blank" rel="noopener"
+                       class="btn btn--outline btn--round" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Читать все отзывы
+                    </a>
                 </div>
             </div>
         </div>
