@@ -483,13 +483,14 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     align-items: center;
     gap: 6px;
     padding: 8px 16px;
-    background: rgba(27, 58, 92, 0.05);
+    background: linear-gradient(135deg, rgba(27, 58, 92, 0.04), rgba(27, 58, 92, 0.08));
     border-radius: var(--radius-full);
     font-size: 0.82rem;
     font-weight: 600;
     color: var(--greek-blue);
     border: 1px solid rgba(27, 58, 92, 0.1);
     transition: all 0.3s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 
 .menu-feature-badge:hover {
@@ -545,15 +546,25 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     overflow: hidden;
     transition: transform 0.4s var(--ease-smooth), box-shadow 0.4s ease;
     box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    border: 1px solid rgba(27, 58, 92, 0.06);
 }
 .menu-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    border-color: rgba(27, 58, 92, 0.12);
 }
 
 .menu-card-img {
-    height: 200px; overflow: hidden;
+    height: 220px; overflow: hidden;
     position: relative;
+}
+.menu-card-img::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60px;
+    background: linear-gradient(to top, rgba(0,0,0,0.08), transparent);
+    pointer-events: none;
 }
 .menu-card-img img {
     width: 100%; height: 100%;
@@ -578,13 +589,14 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 .menu-card-price {
     display: inline-block;
     margin-top: 12px;
-    padding: 4px 14px;
-    background: var(--greek-blue);
+    padding: 6px 16px;
+    background: linear-gradient(135deg, var(--greek-blue), var(--greek-blue-deep));
     color: var(--white);
     border-radius: var(--radius-full);
     font-size: 0.95rem;
     font-weight: 700;
     letter-spacing: 0.02em;
+    box-shadow: 0 2px 8px rgba(27, 58, 92, 0.2);
 }
 
 /* ---- MENU LIST (text-only items) ---- */
@@ -594,7 +606,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     background: var(--cream);
     border-radius: var(--radius-lg);
     padding: 48px 56px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(27, 58, 92, 0.06);
 }
 
 .menu-sheet-section {
@@ -606,6 +619,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     align-items: center;
     gap: 12px;
     margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(27, 58, 92, 0.08);
 }
 .menu-sheet-header svg {
     color: var(--terracotta);
@@ -616,6 +631,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--greek-blue-deep);
+    letter-spacing: 0.01em;
 }
 
 .menu-sheet-divider {
@@ -689,6 +705,9 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     color: var(--terracotta);
     white-space: nowrap;
     flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(183, 65, 14, 0.06), transparent);
+    padding: 2px 10px;
+    border-radius: var(--radius-sm);
 }
 
 /* ---- DIVIDER ---- */
