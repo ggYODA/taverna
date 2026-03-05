@@ -20,7 +20,7 @@
        Меняй ТОЛЬКО здесь — всё остальное обновится само.
        ====================================================== */
     const GOOGLE_RATING = 4.6;      // ← Рейтинг с Google Maps
-    const GOOGLE_COUNT  = 361;      // ← Количество отзывов на Google Maps
+    const GOOGLE_COUNT  = 311;      // ← Количество отзывов на Google Maps
     const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece';
 
     /* ---------- PRELOADER ---------- */
