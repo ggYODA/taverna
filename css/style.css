@@ -469,6 +469,39 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     flex-shrink: 0;
 }
 
+/* ---- RESTAURANT FEATURES BADGES ---- */
+.menu-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-feature-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(27, 58, 92, 0.05);
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--greek-blue);
+    border: 1px solid rgba(27, 58, 92, 0.1);
+    transition: all 0.3s ease;
+}
+
+.menu-feature-badge:hover {
+    background: rgba(27, 58, 92, 0.1);
+    transform: translateY(-2px);
+}
+
+.menu-feature-badge svg {
+    color: var(--terracotta);
+    flex-shrink: 0;
+}
+
 .menu-tabs {
     display: flex; justify-content: center; gap: 8px;
     margin-bottom: 48px; flex-wrap: wrap;
@@ -1338,6 +1371,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 
     .menu-info-bar { flex-direction: column; gap: 12px; align-items: flex-start; padding: 14px 18px; }
     .menu-info-item { font-size: 0.82rem; }
+    .menu-features { gap: 6px; }
+    .menu-feature-badge { padding: 6px 12px; font-size: 0.75rem; }
 
     .menu-full-sheet { padding: 20px 16px; }
     .menu-list-info { max-width: 45%; }
