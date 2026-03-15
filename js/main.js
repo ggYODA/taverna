@@ -143,7 +143,7 @@
        =========================================== */
     const revealSelector =
         '.section-header, .about-text, .about-images, .feature, .gallery-item, ' +
-        '.contact-card, .greek-quote, .map-wrapper, .menu-card, .menu-full-sheet, ' +
+        '.contact-card, .greek-quote, .map-wrapper, .menu-card, ' +
         '.reviews-stats, .reviews-counter, .review-form-wrapper, .reviews-list';
 
     if ('IntersectionObserver' in window) {
