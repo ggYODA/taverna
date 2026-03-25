@@ -91,7 +91,7 @@ app.get('/api/reviews/count', (req, res) => {
  * Добавляет новый отзыв. Ожидает JSON: { name, rating, text }
  * После добавления — рассылает SSE-событие всем подключённым клиентам.
  */
-app.post('/api/reviews', (req, res) => {
+app.post('/api/reviews', (req, res) => { 
     const { name, rating, text } = req.body;
 
     // Валидация
