@@ -702,6 +702,11 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     line-height: 1.4;
 }
 
+/* Full menu is now English-first: keep only dish names visible */
+#cat-fullmenu .menu-list-desc {
+    display: none;
+}
+
 .menu-list-dots {
     flex: 1;
     border-bottom: 2px dotted rgba(27, 58, 92, 0.15);

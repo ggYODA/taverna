@@ -5,7 +5,7 @@
    ============================================ */
 
 (function init() {
-    // Если DOM ещё не готов — подождём
+    // Wait until DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
         return;
@@ -15,12 +15,12 @@
     const isMobile = /Android|iPhone|iPad|iPod|webOS|BlackBerry|Opera Mini/i.test(navigator.userAgent)
                   || window.innerWidth <= 768;
 
-    /* ======================================================
-       GOOGLE MAPS — ЕДИНСТВЕННОЕ МЕСТО ДЛЯ ИЗМЕНЕНИЯ!
-       Меняй ТОЛЬКО здесь — всё остальное обновится само.
-       ====================================================== */
+     /* ======================================================
+         GOOGLE MAPS — SINGLE SOURCE OF TRUTH
+         Change ONLY values here; everything else updates automatically
+         ====================================================== */
     const GOOGLE_RATING = 4.6;      // ← Рейтинг с Google Maps
-    const GOOGLE_COUNT  = 311;      // ← Количество отзывов на Google Maps
+    const GOOGLE_COUNT  = 311;      // ← Current number of reviews on Google Maps
     const GOOGLE_MAPS_URL = 'https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece';
 
     /* ---------- PRELOADER ---------- */
@@ -262,10 +262,10 @@
         const starsEl  = document.getElementById('googleStars');
         const totalEl  = document.getElementById('googleTotal');
 
-        // 1. Видимый рейтинг
+        // 1. Visible rating
         if (ratingEl) ratingEl.textContent = GOOGLE_RATING.toFixed(1);
 
-        // 2. Звёздочки
+        // 2. Star icons
         if (starsEl) {
             const stars = starsEl.querySelectorAll('.rh-star');
             const fullStars = Math.floor(GOOGLE_RATING);
@@ -277,18 +277,13 @@
             });
         }
 
-        // 3. Текст «N отзывов на Google» (с правильным склонением)
+        // 3. "N Google reviews" text
         if (totalEl) {
-            const abs = Math.abs(GOOGLE_COUNT) % 100;
-            const n1 = abs % 10;
-            let word = 'отзывов';
-            if (abs > 10 && abs < 20) word = 'отзывов';
-            else if (n1 > 1 && n1 < 5) word = 'отзыва';
-            else if (n1 === 1) word = 'отзыв';
-            totalEl.textContent = GOOGLE_COUNT + ' ' + word + ' на Google';
+            const word = GOOGLE_COUNT === 1 ? 'review' : 'reviews';
+            totalEl.textContent = GOOGLE_COUNT + ' Google ' + word;
         }
 
-        // 4. Автообновление Schema.org JSON-LD (SEO-микроразметка)
+        // 4. Auto-update Schema.org JSON-LD (SEO microdata)
         const schemaScript = document.querySelector('script[type="application/ld+json"]');
         if (schemaScript) {
             try {
