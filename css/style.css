@@ -632,6 +632,14 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     overflow: hidden;
 }
 
+@media (min-width: 481px) {
+    .menu-sheet-section--start-right {
+        break-before: column;
+        -webkit-column-break-before: always;
+        page-break-before: always;
+    }
+}
+
 .menu-sheet-divider {
     display: none;
 }
