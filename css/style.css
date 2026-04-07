@@ -642,15 +642,14 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     padding: 48px 40px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(27, 58, 92, 0.06);
-    column-count: 2;
-    column-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    align-items: flex-start;
 }
 
 .menu-sheet-section {
     padding: 16px 20px;
-    break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-    margin-bottom: 24px;
     background: var(--white);
     border-radius: var(--radius-md);
     border: 1px solid rgba(27, 58, 92, 0.06);
@@ -658,6 +657,19 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 }
 
 .menu-sheet-divider {
+
+    .menu-col {
+        flex: 1;
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .menu-sheet-section--full {
+        flex: 0 0 100%;
+        margin-top: 24px;
+    }
     display: none;
 }
 
@@ -1429,7 +1441,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 
     .menu-grid { grid-template-columns: 1fr 1fr; }
 
-    .menu-full-sheet { padding: 28px 24px; column-count: 2; column-gap: 24px; }
+    .menu-full-sheet { padding: 28px 24px; gap: 0 24px; }
     .menu-list-info { max-width: 50%; }
     .menu-list-name { font-size: 1.05rem; }
 
@@ -1466,7 +1478,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     .menu-features { gap: 6px; }
     .menu-feature-badge { padding: 6px 12px; font-size: 0.75rem; }
 
-    .menu-full-sheet { padding: 20px 16px; column-count: 1; }
+    .menu-full-sheet { padding: 20px 16px; flex-direction: column; }
+    .menu-col { min-width: 100%; }
     .menu-list-info { max-width: 45%; }
     .menu-list-name { font-size: 0.95rem; }
     .menu-list-price { font-size: 1rem; }
