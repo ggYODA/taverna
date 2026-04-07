@@ -223,6 +223,32 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 }
 .nav-link--call:hover { background: var(--terracotta-light) !important; transform: scale(1.05); }
 
+.nav-socials {
+    display: flex; align-items: center; gap: 12px; margin-left: 12px;
+}
+
+.nav-link--social {
+    display: flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px;
+    color: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.nav-link--social:hover {
+    color: var(--white) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.1);
+}
+.navbar.scrolled .nav-link--social {
+    color: var(--text-secondary) !important;
+    background: rgba(27, 58, 92, 0.08) !important;
+}
+.navbar.scrolled .nav-link--social:hover {
+    color: var(--terracotta) !important;
+    background: rgba(27, 58, 92, 0.15) !important;
+}
+
 .navbar-toggle {
     display: none; flex-direction: column; gap: 5px;
     background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001;
@@ -1262,6 +1288,25 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 .footer-divider { width: 60px; height: 1px; background: rgba(255, 255, 255, 0.15); margin: 8px 0; }
 .footer-copy { color: rgba(255, 255, 255, 0.35); font-size: 0.8rem; }
 
+.footer-socials {
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+}
+
+.footer-social-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.footer-social-link:hover {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+}
+
 /* ---- FAB CALL ---- */
 .fab-call {
     position: fixed; bottom: 32px; right: 32px;
@@ -1355,6 +1400,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     .wine-panel { display: none; }
 
     .navbar-toggle { display: flex; }
+    
+    .nav-socials { display: none; }
 
     .navbar-menu {
         position: fixed; top: 0; right: -100%;
