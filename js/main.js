@@ -277,10 +277,14 @@
             });
         }
 
-        // 3. "N Google reviews" text
+        // 3. "N отзывов в Google" text
         if (totalEl) {
-            const word = GOOGLE_COUNT === 1 ? 'review' : 'reviews';
-            totalEl.textContent = GOOGLE_COUNT + ' Google ' + word;
+            const mod10 = GOOGLE_COUNT % 10;
+            const mod100 = GOOGLE_COUNT % 100;
+            let word = 'отзывов';
+            if (mod10 === 1 && mod100 !== 11) word = 'отзыв';
+            else if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) word = 'отзыва';
+            totalEl.textContent = GOOGLE_COUNT + ' ' + word + ' в Google';
         }
 
         // 4. Auto-update Schema.org JSON-LD (SEO microdata)

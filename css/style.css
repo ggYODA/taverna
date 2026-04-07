@@ -78,6 +78,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 2;
 }
 
 /* ---- PRELOADER ---- */
@@ -122,14 +124,20 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 .wine-panel {
     position: fixed; top: 0;
     width: 180px; height: 100vh;
-    z-index: 50; overflow: hidden;
+    z-index: 1; overflow: hidden;
     pointer-events: none;
     opacity: 0;
+    display: none;
     transition: opacity 0.6s ease;
 }
 .wine-panel.visible { opacity: 1; }
 .wine-panel--left { left: 0; }
 .wine-panel--right { right: 0; }
+
+/* Show decorative wine side panels only on wide desktops */
+@media (min-width: 1400px) {
+    .wine-panel { display: block; }
+}
 
 .wine-panel img {
     width: 100%; height: 100%;
@@ -601,7 +609,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 
 /* ---- MENU LIST (text-only items) ---- */
 .menu-full-sheet {
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     background: var(--cream);
     border-radius: var(--radius-lg);
@@ -619,6 +627,7 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     background: var(--white);
     border-radius: var(--radius-md);
     border: 1px solid rgba(27, 58, 92, 0.06);
+    overflow: hidden;
 }
 
 .menu-sheet-divider {
