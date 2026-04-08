@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #2b7cb5;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px 15px;
+}
+
+.hero-inner {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.badge {
+    display: inline-block;
+    background: #fff;
+    color: #2b7cb5;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.text-col h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-col h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+}
+
+.text-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.8);
+}
+
+.address {
+    font-size: 13px;
+    color: rgba(255,255,255,0.7);
+}
+
+.photo-col {
+    flex: 1;
+    background: rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.photo-col img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.bottom-bar {
+    background: #1f6599;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-max {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 50px;
+    background: #168ACD;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-max:hover {
+    background: #1279b5;
+}
+
+.max-icon {
+    flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero {
+        padding: 20px 15px 15px;
+    }
+
+    .text-col {
+        padding: 20px;
+    }
+
+    .text-col h1 {
+        font-size: 24px;
+    }
+
+    .btn-max {
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+}
