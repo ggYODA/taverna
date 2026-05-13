@@ -805,9 +805,12 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     line-height: 1.4;
 }
 
-/* Full menu is now English-first: keep only dish names visible */
+/* Full menu: desc hidden by default, shown only for Greek (bilingual mode) */
 #cat-fullmenu .menu-list-desc {
     display: none;
+}
+body[data-lang="el"] #cat-fullmenu .menu-list-desc {
+    display: block;
 }
 
 .menu-list-dots {
