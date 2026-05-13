@@ -58,6 +58,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css?v=20260304">
+    <script src="js/i18n.js"></script>
 
     <!-- SEO: Schema.org JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -140,11 +141,11 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="navbar-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link active">Αρχική</a></li>
-                <li><a href="#menu" class="nav-link">Μενού</a></li>
-                <li><a href="#reviews" class="nav-link">Κριτικές</a></li>
-                <li><a href="#about" class="nav-link">Σχετικά</a></li>
-                <li><a href="#contact" class="nav-link">Επικοινωνία</a></li>
+                <li><a href="#hero" class="nav-link active" data-i18n="nav-home">Αρχική</a></li>
+                <li><a href="#menu" class="nav-link" data-i18n="nav-menu">Μενού</a></li>
+                <li><a href="#reviews" class="nav-link" data-i18n="nav-reviews">Κριτικές</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav-about">Σχετικά</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav-contact">Επικοινωνία</a></li>
                 <li class="nav-socials">
                     <a href="https://www.instagram.com/taverna_armellada/" target="_blank" rel="noopener" class="nav-link nav-link--social" title="Instagram">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
@@ -160,6 +161,11 @@
                             <button class="lang-option active" data-lang="el">🇬🇷 Ελληνικά</button>
                             <button class="lang-option" data-lang="en">🇬🇧 English</button>
                             <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+                            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+                            <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                            <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+                            <button class="lang-option" data-lang="ro">🇷🇴 Română</button>
+                            <button class="lang-option" data-lang="uk">🇺🇦 Українська</button>
                         </div>
                     </div>
                 </li>
@@ -174,7 +180,7 @@
             <img src="images/Screenshot 2026-02-27 072118.png" alt="Armellada Taverna — Greek seafood restaurant interior in Nea Makri, Greece" class="hero-bg-img">
         </div>
         <div class="hero-content">
-            <div class="hero-badge">
+            <div class="hero-badge" data-i18n="hero-location">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Νέα Μάκρη, Ελλάδα
             </div>
@@ -183,18 +189,16 @@
                 <span class="hero-title-line hero-title-line--accent">Taverna</span>
                 <span class="sr-only">— Greek Seafood Restaurant in Nea Makri, Greece | Ελληνική Ταβέρνα Νέα Μάκρη</span>
             </h1>
-            <p class="hero-subtitle">Αυθεντική ελληνική κουζίνα με θέα στη θάλασσα.<br><span style="font-size:0.85em;opacity:0.8">Fresh seafood · Local wines · Mediterranean atmosphere</span></p>
+            <p class="hero-subtitle"><span data-i18n="hero-subtitle">Αυθεντική ελληνική κουζίνα με θέα στη θάλασσα.</span><br><span class="hero-subtitle-small" data-i18n="hero-subtitle-sub">Fresh seafood · Local wines · Mediterranean atmosphere</span></p>
             <div class="hero-actions">
                 <a href="https://www.instagram.com/taverna_armellada/" target="_blank" rel="noopener" class="btn btn--primary btn--round">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
-                    Κράτηση Τραπεζιού / Book a Table
+                    <span data-i18n="hero-btn-book">Κράτηση Τραπεζιού</span>
                 </a>
-                <a href="#menu" class="btn btn--outline btn--round">
-                    Δείτε το Μενού / View Menu
-                </a>
+                <a href="#menu" class="btn btn--outline btn--round" data-i18n="hero-btn-menu">Δείτε το Μενού</a>
             </div>
             <div class="hero-scroll">
-                <span>Κάτω</span>
+                <span data-i18n="hero-scroll">Κάτω</span>
                 <div class="hero-scroll-line"></div>
             </div>
         </div>
@@ -204,43 +208,43 @@
     <section class="menu-section" id="menu">
         <div class="container">
             <div class="section-header section-header--center">
-                <span class="section-tag">Μενού</span>
-                <h2 class="section-title">Μενού — Φρέσκα Θαλασσινά &amp; Ελληνική Κουζίνα</h2>
+                <span class="section-tag" data-i18n="section-tag-menu">Μενού</span>
+                <h2 class="section-title" data-i18n="section-title-menu">Μενού — Φρέσκα Θαλασσινά &amp; Ελληνική Κουζίνα</h2>
                 <p class="section-desc">Αεροπορίας 80, Νέα Μάκρη · Tel. 22940 91735 / 699 442 4276</p>
             </div>
 
             <!-- RESTAURANT FEATURES -->
             <div class="menu-features">
-                <span class="menu-feature-badge">🕐 12:00 – 00:00</span>
-                <span class="menu-feature-badge">🛕 Delivery 14:00 – 23:00</span>
-                <span class="menu-feature-badge">💳 Card / Κάρτα</span>
-                <span class="menu-feature-badge">🌿 Terrace / Βεράντα</span>
-                <span class="menu-feature-badge">📦 Takeaway / Πάρτε μαζί</span>
-                <span class="menu-feature-badge">📞 Reservations / Κρατήσεις</span>
-                <span class="menu-feature-badge">📶 Free Wi-Fi</span>
-                <span class="menu-feature-badge">♿ Accessible / Προσβάσιμο</span>
-                <span class="menu-feature-badge">🅿 Parking / Πάρκινγ</span>
+                <span class="menu-feature-badge" data-i18n="badge-hours">🕐 12:00 – 00:00</span>
+                <span class="menu-feature-badge" data-i18n="badge-delivery">🛵 Delivery 14:00 – 23:00</span>
+                <span class="menu-feature-badge" data-i18n="badge-card">💳 Κάρτα</span>
+                <span class="menu-feature-badge" data-i18n="badge-terrace">🌿 Βεράντα</span>
+                <span class="menu-feature-badge" data-i18n="badge-takeaway">📦 Πάρτε μαζί</span>
+                <span class="menu-feature-badge" data-i18n="badge-booking">📞 Κρατήσεις</span>
+                <span class="menu-feature-badge" data-i18n="badge-wifi">📶 Free Wi-Fi</span>
+                <span class="menu-feature-badge" data-i18n="badge-accessible">♿ Προσβάσιμο</span>
+                <span class="menu-feature-badge" data-i18n="badge-parking">🅿 Parking</span>
             </div>
 
             <!-- INFO BAR -->
             <div class="menu-info-bar">
                 <div class="menu-info-item">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                    <span>Κουβέρ (ψωμί / bread): 1.00€</span>
+                    <span data-i18n="info-couvert">Κουβέρ (ψωμί): 1.00€</span>
                 </div>
                 <div class="menu-info-item">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s-8-4.5-8-11.8a8 8 0 0 1 16 0c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <span>Τιμές με ΦΠΑ · All prices incl. VAT</span>
+                    <span data-i18n="info-vat">Τιμές με ΦΠΑ · All prices incl. VAT</span>
                 </div>
                 <div class="menu-info-item">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                    <span>Παρακαλούμε ενημερώστε μας για αλλεργίες / Please inform us of allergies</span>
+                    <span data-i18n="info-allergy">Παρακαλούμε ενημερώστε μας για αλλεργίες</span>
                 </div>
             </div>
 
             <div class="menu-tabs">
-                <button class="menu-tab active" data-category="featured">📸 Φωτογραφίες / Photos</button>
-                <button class="menu-tab" data-category="fullmenu">📋 Πλήρες Μενού / Full Menu</button>
+                <button class="menu-tab active" data-category="featured" data-i18n="menu-tab-photos">📸 Φωτογραφίες</button>
+                <button class="menu-tab" data-category="fullmenu" data-i18n="menu-tab-full">📋 Πλήρες Μενού</button>
             </div>
 
             <!-- ========== FEATURED DISHES (photo gallery) ========== -->
@@ -250,72 +254,72 @@
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072048.png" alt="Fresh fish on ice — Armellada Taverna Nea Makri" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Φρέσκα Ψάρια — Fresh Fish</h3>
-                            <p class="menu-card-desc">Sea bream, sea bass, dentex, red mullet, cod, swordfish — catch of the day</p>
-                            <span class="menu-card-price">45 – 60€/кг</span>
+                            <h3 data-i18n="card-fish-name">Φρέσκα Ψάρια</h3>
+                            <p class="menu-card-desc" data-i18n="card-fish-desc">Sea bream, sea bass, dentex, red mullet, cod, swordfish — catch of the day</p>
+                            <span class="menu-card-price" data-i18n="card-fish-price">45 – 60€/kg</span>
                         </div>
                     </div>
                     <!-- Осьминог -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071831.png" alt="Grilled octopus — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Grilled Octopus</h3>
-                            <p class="menu-card-desc">Grilled octopus served with fava puree</p>
-                            <span class="menu-card-price">15.00€</span>
+                            <h3 data-i18n="card-octopus-name">Χταπόδι στη Σχάρα</h3>
+                            <p class="menu-card-desc" data-i18n="card-octopus-desc">Grilled octopus served with fava puree</p>
+                            <span class="menu-card-price" data-i18n="card-octopus-price">15.00€</span>
                         </div>
                     </div>
                     <!-- Кальмар -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071837.png" alt="Grilled calamari 300gr — Armellada" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Grilled Calamari (300gr)</h3>
-                            <p class="menu-card-desc">Grilled calamari served with fava puree</p>
-                            <span class="menu-card-price">12.00€</span>
+                            <h3 data-i18n="card-calamari-name">Καλαμαράκια Σχάρας (300γρ)</h3>
+                            <p class="menu-card-desc" data-i18n="card-calamari-desc">Grilled calamari served with fava puree</p>
+                            <span class="menu-card-price" data-i18n="card-calamari-price">12.00€</span>
                         </div>
                     </div>
                     <!-- Мидии саганаки -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071844.png" alt="Mussels saganaki — Armellada" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Mussels Saganaki</h3>
-                            <p class="menu-card-desc">Mussels saganaki in tomato-feta sauce</p>
-                            <span class="menu-card-price">8.50€</span>
+                            <h3 data-i18n="card-mussels-name">Μύδια Σαγανάκι</h3>
+                            <p class="menu-card-desc" data-i18n="card-mussels-desc">Mussels in tomato-feta sauce</p>
+                            <span class="menu-card-price" data-i18n="card-mussels-price">8.50€</span>
                         </div>
                     </div>
                     <!-- Гребешки -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 072158.png" alt="Scallops shells — Armellada seafood" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Scallops Shells</h3>
-                            <p class="menu-card-desc">Scallop in shell (1 pc.)</p>
-                            <span class="menu-card-price">3.50€</span>
+                            <h3 data-i18n="card-scallops-name">Χτένια στο Κέλυφος</h3>
+                            <p class="menu-card-desc" data-i18n="card-scallops-desc">Scallop in shell (1 pc.)</p>
+                            <span class="menu-card-price" data-i18n="card-scallops-price">3.50€</span>
                         </div>
                     </div>
                     <!-- Дзадзики и соусы -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071852.png" alt="Tzatziki and homemade dips — Armellada" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Tzatziki &amp; Dips</h3>
-                            <p class="menu-card-desc">Classic / beetroot tzatziki, taramasalata, skordalia</p>
-                            <span class="menu-card-price">from 4.00€</span>
+                            <h3 data-i18n="card-tzatziki-name">Τζατζίκι &amp; Αλοιφές</h3>
+                            <p class="menu-card-desc" data-i18n="card-tzatziki-desc">Classic / beetroot tzatziki, taramasalata, skordalia</p>
+                            <span class="menu-card-price" data-i18n="card-tzatziki-price">από 4.00€</span>
                         </div>
                     </div>
                     <!-- Греческий салат -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071936.png" alt="Greek salad — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Greek Salad</h3>
-                            <p class="menu-card-desc">Greek salad — large / small</p>
-                            <span class="menu-card-price">6.50€ / 4.50€</span>
+                            <h3 data-i18n="card-salad-name">Χωριάτικη Σαλάτα</h3>
+                            <p class="menu-card-desc" data-i18n="card-salad-desc">Greek salad — large / small</p>
+                            <span class="menu-card-price" data-i18n="card-salad-price">6.50€ / 4.50€</span>
                         </div>
                     </div>
                     <!-- Дакос -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071907.png" alt="Dakos salad — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Dakos Salad</h3>
-                            <p class="menu-card-desc">Cretan dakos with rusks and feta</p>
-                            <span class="menu-card-price">6.00€</span>
+                            <h3 data-i18n="card-dakos-name">Νταμ (Ντάκος)</h3>
+                            <p class="menu-card-desc" data-i18n="card-dakos-desc">Cretan dakos with rusks and feta</p>
+                            <span class="menu-card-price" data-i18n="card-dakos-price">6.00€</span>
                         </div>
                     </div>
 
@@ -323,27 +327,27 @@
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-03-04 094351.png" alt="Ντολμαδάκια χειροποίητα — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Ντολμαδάκια χειροποίητα</h3>
-                            <p class="menu-card-desc">Handmade vine leaf rolls with feta cheese</p>
-                            <span class="menu-card-price">5.50€</span>
+                            <h3 data-i18n="card-dolma-name">Ντολμαδάκια χειροποίητα</h3>
+                            <p class="menu-card-desc" data-i18n="card-dolma-desc">Handmade vine leaf rolls with feta cheese</p>
+                            <span class="menu-card-price" data-i18n="card-dolma-price">5.50€</span>
                         </div>
                     </div>
                     <!-- Ризотто -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071732.png" alt="Risotto frutti di mare — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Risotto Frutti di Mare</h3>
-                            <p class="menu-card-desc">Seafood risotto</p>
-                            <span class="menu-card-price">16.00€</span>
+                            <h3 data-i18n="card-risotto-name">Ριζότο Frutti di Mare</h3>
+                            <p class="menu-card-desc" data-i18n="card-risotto-desc">Seafood risotto</p>
+                            <span class="menu-card-price" data-i18n="card-risotto-price">16.00€</span>
                         </div>
                     </div>
                     <!-- Лингвини -->
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071816.png" alt="Linguine frutti di mare — Armellada" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Linguine Frutti di Mare</h3>
-                            <p class="menu-card-desc">Linguine with seafood</p>
-                            <span class="menu-card-price">17.00€</span>
+                            <h3 data-i18n="card-linguine-name">Λιγκουίνι Frutti di Mare</h3>
+                            <p class="menu-card-desc" data-i18n="card-linguine-desc">Linguine with seafood</p>
+                            <span class="menu-card-price" data-i18n="card-linguine-price">17.00€</span>
                         </div>
                     </div>
 
@@ -351,9 +355,9 @@
                     <div class="menu-card">
                         <div class="menu-card-img"><img src="images/Screenshot 2026-02-27 071802.png" alt="Wine selection — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Κρασιά — Wines</h3>
-                            <p class="menu-card-desc">White / Red / Rose / Moschofilero</p>
-                            <span class="menu-card-price">1.50 – 10.00€</span>
+                            <h3 data-i18n="card-wine-name">Κρασιά</h3>
+                            <p class="menu-card-desc" data-i18n="card-wine-desc">Λευκό / Κόκκινο / Ροζέ / Moschofilero</p>
+                            <span class="menu-card-price" data-i18n="card-wine-price">1.50 – 10.00€</span>
                         </div>
                     </div>
 
@@ -638,9 +642,9 @@
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="section-header section-header--center">
-                <span class="section-tag">Κριτικές</span>
-                <h2 class="section-title">Κριτικές Επισκεπτών — Armellada Taverna</h2>
-                <p class="section-desc">Κριτικές στο Google Maps / Guest Reviews on Google</p>
+                <span class="section-tag" data-i18n="section-tag-reviews">Κριτικές</span>
+                <h2 class="section-title" data-i18n="section-title-reviews">Κριτικές Επισκεπτών — Armellada Taverna</h2>
+                <p class="section-desc" data-i18n="section-desc-reviews">Κριτικές στο Google Maps / Guest Reviews on Google</p>
             </div>
 
             <!-- РЕЙТИНГ GOOGLE MAPS (статический блок) -->
@@ -657,7 +661,7 @@
                                 <svg class="rh-star filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                                 <svg class="rh-star half" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                             </div>
-                            <span class="rh-total" id="googleTotal">321 κριτικές στο Google / 321 reviews</span>
+                            <span class="rh-total" id="googleTotal" data-i18n="reviews-total">321 κριτικές στο Google</span>
                         </div>
                     </div>
 
@@ -676,19 +680,19 @@
             <div class="review-form-wrapper" style="text-align:center;">
                 <h3 class="review-form-title">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    Η γνώμη σας μας βοηθά / Your Review Matters
+                    <span data-i18n="review-cta-title">Η γνώμη σας μας βοηθά</span>
                 </h3>
-                <p style="color:var(--text-secondary);margin-bottom:1.5rem;font-size:0.95rem;max-width:480px;margin-left:auto;margin-right:auto;">Αφήστε κριτική στο Google Maps — βοηθά άλλους επισκέπτες να μας βρουν. / Leave a review on Google Maps — it helps others find us.</p>
+                <p style="color:var(--text-secondary);margin-bottom:1.5rem;font-size:0.95rem;max-width:480px;margin-left:auto;margin-right:auto;" data-i18n="review-cta-desc">Αφήστε κριτική στο Google Maps — βοηθά άλλους επισκέπτες να μας βρουν.</p>
                 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
                     <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece" target="_blank" rel="noopener"
                        class="btn btn--primary btn--round" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-                       Γράψτε Κριτική / Write a Review
+                       <span data-i18n="review-btn-write">Γράψτε Κριτική</span>
                     </a>
                     <a href="https://www.google.com/maps/search/Armellada+Taverna+Aeroporias+80+Nea+Makri+Greece" target="_blank" rel="noopener"
                        class="btn btn--outline btn--round" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                       Όλες οι Κριτικές / All Reviews
+                       <span data-i18n="review-btn-all">Όλες οι Κριτικές</span>
                     </a>
                 </div>
             </div>
@@ -700,16 +704,16 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Σχετικά με εμάς</span>
-                <h2 class="section-title">Armellada — <em>Αυθεντική Ελληνική Ταβέρνα στη Νέα Μάκρη</em></h2>
+                <span class="section-tag" data-i18n="section-tag-about">Σχετικά με εμάς</span>
+                <h2 class="section-title" data-i18n="section-title-about">Armellada — Αυθεντική Ελληνική Ταβέρνα στη Νέα Μάκρη</h2>
             </div>
             <div class="about-grid">
                 <div class="about-text">
                     <p class="about-lead">
-                        Στην καρδιά της Νέας Μάκρης, η ταβέρνα μας προσφέρει αυθεντική γαστρονομική εμπειρία με παραδοσιακές ελληνικές γεύσεις.<br><span style="font-size:0.9em;opacity:0.85">In the heart of Nea Makri, our taverna offers an authentic gastronomic experience with traditional Greek flavours.</span>
+                        <span data-i18n="about-lead">Στην καρδιά της Νέας Μάκρης, η ταβέρνα μας προσφέρει αυθεντική γαστρονομική εμπειρία με παραδοσιακές ελληνικές γεύσεις.</span><br><span class="about-sub" data-i18n="about-lead-sub" style="font-size:0.9em;opacity:0.85">In the heart of Nea Makri, our taverna offers an authentic gastronomic experience with traditional Greek flavours.</span>
                     </p>
                     <p>
-                        Χρησιμοποιούμε μόνο φρέσκα υλικά: ψάρια της ημέρας, ελαιόλαδο από τοπικές ελιές και αρωματικά βότανα.<br><span style="font-size:0.9em;opacity:0.85">We use only fresh ingredients: catch of the day, local olive oil and aromatic herbs.</span>
+                        <span data-i18n="about-p2">Χρησιμοποιούμε μόνο φρέσκα υλικά: ψάρια της ημέρας, ελαιόλαδο από τοπικές ελιές και αρωματικά βότανα.</span><br><span class="about-sub" data-i18n="about-p2-sub" style="font-size:0.9em;opacity:0.85">We use only fresh ingredients: catch of the day, local olive oil and aromatic herbs.</span>
                     </p>
                     <div class="about-features">
                         <div class="feature">
@@ -717,8 +721,8 @@
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 12c3-6 11-6 14.5-1-3.5 5-11.5 5-14.5-1z"/><path d="M2.5 12C3.5 10 5 9 6.5 12c-1.5 3-3 2-4 0z"/><circle cx="16" cy="11.5" r="1" fill="currentColor"/></svg>
                             </div>
                             <div class="feature-text">
-                                <strong>Φρέσκα Θαλασσινά / Fresh Seafood</strong>
-                                <span>Ψάρια και θαλασσινά από την αγορά / Direct from the market</span>
+                                <strong data-i18n="feat-seafood-title">Φρέσκα Θαλασσινά</strong>
+                                <span data-i18n="feat-seafood-desc">Ψάρια και θαλασσινά από την αγορά</span>
                             </div>
                         </div>
                         <div class="feature">
@@ -726,8 +730,8 @@
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l-1 8a5 5 0 0 1-3 4.5A5 5 0 0 1 9 10L8 2z"/><path d="M12 14.5V22"/><path d="M8 22h8"/></svg>
                             </div>
                             <div class="feature-text">
-                                <strong>Τοπικά Κρασιά / Local Wines</strong>
-                                <span>Τα καλύτερα κρασιά ελληνικών αμπελώνας / Best Greek winery wines</span>
+                                <strong data-i18n="feat-wine-title">Τοπικά Κρασιά</strong>
+                                <span data-i18n="feat-wine-desc">Τα καλύτερα κρασιά ελληνικών αμπελώνων</span>
                             </div>
                         </div>
                         <div class="feature">
@@ -735,8 +739,8 @@
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20C8 16 12 14 20 4"/><ellipse cx="9" cy="13" rx="3" ry="4" transform="rotate(-30 9 13)"/><ellipse cx="15" cy="8" rx="2.5" ry="3.5" transform="rotate(-30 15 8)"/></svg>
                             </div>
                             <div class="feature-text">
-                                <strong>Ελληνικές Παραδόσεις / Greek Traditions</strong>
-                                <span>Συνταγές από γενιές / Recipes passed down through generations</span>
+                                <strong data-i18n="feat-tradition-title">Ελληνικές Παραδόσεις</strong>
+                                <span data-i18n="feat-tradition-desc">Συνταγές από γενιές</span>
                             </div>
                         </div>
                     </div>
@@ -758,44 +762,44 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header section-header--center">
-                <span class="section-tag">Επικοινωνία</span>
-                <h2 class="section-title">Σας Περιμένουμε — Αεροπορίας 80, Νέα Μάκρη</h2>
-                <p class="section-desc">Καλωσορίζουμε πάντα νέους επισκέπτες / Always welcoming new guests</p>
+                <span class="section-tag" data-i18n="section-tag-contact">Επικοινωνία</span>
+                <h2 class="section-title" data-i18n="section-title-contact">Σας Περιμένουμε — Αεροπορίας 80, Νέα Μάκρη</h2>
+                <p class="section-desc" data-i18n="section-desc-contact">Καλωσορίζουμε πάντα νέους επισκέπτες</p>
             </div>
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <h3>Διεύθυνση / Address</h3>
+                    <h3 data-i18n="contact-addr-title">Διεύθυνση</h3>
                     <p>Aeroporias 80<br>Nea Makri, Marathon<br>190 05 Greece</p>
-                    <a href="https://maps.google.com/?q=Aeroporias+80+Nea+Makri+Marathon+190+05+Greece" target="_blank" class="btn btn--small btn--round">
-                        Άνοιξε χάρτη / Open Map →
+                    <a href="https://maps.google.com/?q=Aeroporias+80+Nea+Makri+Marathon+190+05+Greece" target="_blank" class="btn btn--small btn--round" data-i18n="contact-map-btn">
+                        Άνοιξε χάρτη →
                     </a>
                 </div>
                 <div class="contact-card contact-card--highlight">
                     <div class="contact-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     </div>
-                    <h3>Τηλέφωνο / Phone</h3>
+                    <h3 data-i18n="contact-phone-title">Τηλέφωνο</h3>
                     <p class="contact-phone">+30 699 442 4276</p>
                     <a href="tel:+306994424276" class="btn btn--primary btn--round btn--glow">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Τηλεφωνήστε / Call
+                        <span data-i18n="contact-call-btn">Τηλεφωνήστε</span>
                     </a>
-                    <a href="https://www.instagram.com/taverna_armellada/" target="_blank" rel="noopener" class="btn btn--outline btn--round" style="margin-top:10px;">
-                        Γράψτε στο Instagram / DM on Instagram
+                    <a href="https://www.instagram.com/taverna_armellada/" target="_blank" rel="noopener" class="btn btn--outline btn--round" style="margin-top:10px;" data-i18n="contact-instagram-btn">
+                        Γράψτε στο Instagram
                     </a>
                 </div>
                 <div class="contact-card">
                     <div class="contact-card-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
-                    <h3>Ωράριο / Hours</h3>
-                    <p>Δευτέρα — Κυριακή / Mon — Sun<br>12:00 — 00:00</p>
+                    <h3 data-i18n="contact-hours-title">Ωράριο</h3>
+                    <p><span data-i18n="contact-hours-days">Δευτέρα — Κυριακή</span><br>12:00 — 00:00</p>
                     <span class="contact-status open">
                         <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="currentColor"/></svg>
-                        Ανοιχτά τώρα / Open now
+                        <span data-i18n="contact-open">Ανοιχτά τώρα</span>
                     </span>
                 </div>
             </div>
@@ -830,7 +834,7 @@
                     </a>
                 </div>
                 <div class="footer-divider"></div>
-                <p class="footer-copy">&copy; 2026 Armellada Taverna. Με επιφύλαξη παντός δικαιώματος / All rights reserved.</p>
+                <p class="footer-copy" data-i18n="footer-copy">&copy; 2026 Armellada Taverna. Με επιφύλαξη παντός δικαιώματος.</p>
             </div>
         </div>
     </footer>
@@ -852,59 +856,22 @@
         document.body.appendChild(s);
     </script>
     <script>
-    // ===== LANGUAGE SWITCHER =====
-    const LANGS = {
-        el: {
-            'nav-home': 'Αρχική', 'nav-menu': 'Μενού', 'nav-reviews': 'Κριτικές',
-            'nav-about': 'Σχετικά', 'nav-contact': 'Επικοινωνία',
-            'hero-location': 'Νέα Μάκρη, Ελλάδα',
-            'hero-subtitle': 'Αυθεντική ελληνική κουζίνα με θέα στη θάλασσα.<br><span style="font-size:0.85em;opacity:0.8">Fresh seafood · Local wines · Mediterranean atmosphere</span>',
-            'hero-btn-book': 'Κράτηση Τραπεζιού / Book a Table',
-            'hero-btn-menu': 'Δείτε το Μενού / View Menu',
-            'section-tag-menu': 'Μενού', 'section-title-menu': 'Μενού — Φρέσκα Θαλασσινά & Ελληνική Κουζίνα',
-            'section-tag-reviews': 'Κριτικές', 'section-title-reviews': 'Κριτικές Επισκεπτών — Armellada Taverna',
-            'section-tag-about': 'Σχετικά με εμάς', 'section-title-about': 'Armellada — Αυθεντική Ελληνική Ταβέρνα στη Νέα Μάκρη',
-            'section-tag-contact': 'Επικοινωνία', 'section-title-contact': 'Σας Περιμένουμε — Αεροπορίας 80, Νέα Μάκρη',
-            'contact-title-addr': 'Διεύθυνση / Address', 'contact-title-phone': 'Τηλέφωνο / Phone',
-            'contact-title-hours': 'Ωράριο / Hours', 'footer-copy': '© 2026 Armellada Taverna. Με επιφύλαξη παντός δικαιώματος / All rights reserved.'
-        },
-        en: {
-            'nav-home': 'Home', 'nav-menu': 'Menu', 'nav-reviews': 'Reviews',
-            'nav-about': 'About', 'nav-contact': 'Contact',
-            'hero-location': 'Nea Makri, Greece',
-            'hero-subtitle': 'Authentic Greek cuisine with a sea view.<br><span style="font-size:0.85em;opacity:0.8">Fresh seafood · Local wines · Mediterranean atmosphere</span>',
-            'hero-btn-book': 'Book a Table',
-            'hero-btn-menu': 'View Menu',
-            'section-tag-menu': 'Menu', 'section-title-menu': 'Menu — Fresh Seafood & Greek Cuisine',
-            'section-tag-reviews': 'Reviews', 'section-title-reviews': 'Guest Reviews — Armellada Taverna',
-            'section-tag-about': 'About us', 'section-title-about': 'Armellada — Authentic Greek Taverna in Nea Makri',
-            'section-tag-contact': 'Contact', 'section-title-contact': 'Welcome — Aeroporias 80, Nea Makri',
-            'contact-title-addr': 'Address', 'contact-title-phone': 'Phone',
-            'contact-title-hours': 'Opening Hours', 'footer-copy': '© 2026 Armellada Taverna. All rights reserved.'
-        },
-        ru: {
-            'nav-home': 'Главная', 'nav-menu': 'Меню', 'nav-reviews': 'Отзывы',
-            'nav-about': 'О нас', 'nav-contact': 'Контакты',
-            'hero-location': 'Неа Макри, Греция',
-            'hero-subtitle': 'Аутентичная греческая кухня с видом на море.<br><span style="font-size:0.85em;opacity:0.8">Свежие морепродукты · Местные вина · Средиземноморская атмосфера</span>',
-            'hero-btn-book': 'Забронировать стол',
-            'hero-btn-menu': 'Смотреть меню',
-            'section-tag-menu': 'Меню', 'section-title-menu': 'Наше меню — свежие морепродукты и греческая кухня',
-            'section-tag-reviews': 'Отзывы', 'section-title-reviews': 'Отзывы гостей — Armellada Taverna',
-            'section-tag-about': 'О нас', 'section-title-about': 'Armellada — аутентичная греческая таверна в Неа Макри',
-            'section-tag-contact': 'Контакты', 'section-title-contact': 'Ждём вас — Aeroporias 80, Nea Makri',
-            'contact-title-addr': 'Адрес', 'contact-title-phone': 'Телефон',
-            'contact-title-hours': 'Режим работы', 'footer-copy': '© 2026 Armellada Taverna. Все права защищены.'
-        }
-    };
+    // ===== LANGUAGE SWITCHER — uses window.ARMELLADA_LANGS from js/i18n.js =====
+    const LANGS = window.ARMELLADA_LANGS;
 
-    // Map data-lang-key to DOM elements
+    // Apply translations using data-i18n attributes
     function applyLang(lang) {
         const t = LANGS[lang];
         if (!t) return;
-        document.querySelectorAll('[data-lang-key]').forEach(el => {
-            const key = el.getAttribute('data-lang-key');
-            if (t[key] !== undefined) el.innerHTML = t[key];
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) el.textContent = t[key];
+        });
+        // Hide subtitle spans when empty (Greek sub in EN/RU/etc mode)
+        document.querySelectorAll('.about-sub').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (key && t[key] === '') el.style.display = 'none';
+            else el.style.display = '';
         });
         document.querySelectorAll('.lang-option').forEach(btn => {
             btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
@@ -912,50 +879,7 @@
         localStorage.setItem('armelladaLang', lang);
     }
 
-    // Add data-lang-key to elements on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', function() {
-        const map = [
-            ['a[href="#hero"].nav-link', 'nav-home'],
-            ['a[href="#menu"].nav-link', 'nav-menu'],
-            ['a[href="#reviews"].nav-link', 'nav-reviews'],
-            ['a[href="#about"].nav-link', 'nav-about'],
-            ['a[href="#contact"].nav-link', 'nav-contact'],
-        ];
-        map.forEach(([sel, key]) => {
-            const el = document.querySelector(sel);
-            if (el) el.setAttribute('data-lang-key', key);
-        });
-
-        // Hero
-        const heroLoc = document.querySelector('.hero-badge');
-        if (heroLoc) heroLoc.setAttribute('data-lang-key', 'hero-location');
-        const heroSub = document.querySelector('.hero-subtitle');
-        if (heroSub) heroSub.setAttribute('data-lang-key', 'hero-subtitle');
-        const heroBook = document.querySelector('.btn--primary.btn--round');
-        if (heroBook) heroBook.setAttribute('data-lang-key', 'hero-btn-book');
-        const heroMenuBtn = document.querySelector('a[href="#menu"].btn--outline');
-        if (heroMenuBtn) heroMenuBtn.setAttribute('data-lang-key', 'hero-btn-menu');
-
-        // Sections - use section-tag and section-title by section id
-        const sectionMap = { menu: 'menu', reviews: 'reviews', about: 'about', contact: 'contact' };
-        Object.entries(sectionMap).forEach(([id, key]) => {
-            const sec = document.getElementById(id);
-            if (!sec) return;
-            const tag = sec.querySelector('.section-tag');
-            if (tag) tag.setAttribute('data-lang-key', 'section-tag-' + key);
-            const title = sec.querySelector('.section-title');
-            if (title) title.setAttribute('data-lang-key', 'section-title-' + key);
-        });
-
-        // Contact titles
-        const contactCards = document.querySelectorAll('.contact-card h3');
-        const contactKeys = ['contact-title-addr', 'contact-title-phone', 'contact-title-hours'];
-        contactCards.forEach((el, i) => { if (contactKeys[i]) el.setAttribute('data-lang-key', contactKeys[i]); });
-
-        // Footer copy
-        const footerCopy = document.querySelector('.footer-copy');
-        if (footerCopy) footerCopy.setAttribute('data-lang-key', 'footer-copy');
-
         // Restore saved language
         const saved = localStorage.getItem('armelladaLang') || 'el';
         applyLang(saved);
