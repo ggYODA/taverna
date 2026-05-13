@@ -230,25 +230,25 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 .nav-link--social {
     display: flex; align-items: center; justify-content: center;
     width: 36px; height: 36px;
-    color: rgba(255, 255, 255, 0.95) !important;
-    background: rgba(255, 255, 255, 0.22) !important;
+    color: var(--white) !important;
+    background: rgba(27, 58, 92, 0.65) !important;
     border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.3);
     transition: all 0.3s ease;
 }
 .nav-link--social:hover {
     color: var(--white) !important;
-    background: rgba(255, 255, 255, 0.38) !important;
+    background: rgba(27, 58, 92, 0.9) !important;
     transform: scale(1.1);
 }
 .navbar.scrolled .nav-link--social {
-    color: var(--text-primary) !important;
-    background: rgba(27, 58, 92, 0.1) !important;
-    border-color: rgba(27,58,92,0.2);
+    color: var(--white) !important;
+    background: var(--greek-blue) !important;
+    border-color: transparent;
 }
 .navbar.scrolled .nav-link--social:hover {
-    color: var(--terracotta) !important;
-    background: rgba(27, 58, 92, 0.18) !important;
+    color: var(--white) !important;
+    background: var(--greek-blue-deep) !important;
 }
 
 /* Language switcher */
@@ -709,15 +709,13 @@ body[data-lang="el"] #cat-featured .menu-card-desc { display: none; }
     padding: 48px 40px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
     border: 1px solid rgba(27, 58, 92, 0.06);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    columns: 2;
     column-gap: 40px;
-    align-items: start;
 }
 
 .menu-col {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    break-inside: avoid;
 }
 
 .menu-sheet-section {
@@ -736,7 +734,7 @@ body[data-lang="el"] #cat-featured .menu-card-desc { display: none; }
 }
 
 .menu-sheet-section--full {
-    grid-column: 1 / -1;
+    column-span: all;
     margin-bottom: 24px;
 }
 
@@ -1549,7 +1547,7 @@ body[data-lang="el"] #cat-fullmenu .menu-list-desc {
     .menu-features { gap: 6px; }
     .menu-feature-badge { padding: 6px 12px; font-size: 0.75rem; }
 
-    .menu-full-sheet { padding: 20px 16px; grid-template-columns: 1fr; }
+    .menu-full-sheet { padding: 20px 16px; columns: 1; }
     .menu-list-info { max-width: 45%; }
     .menu-list-name { font-size: 0.95rem; }
     .menu-list-price { font-size: 1rem; }
