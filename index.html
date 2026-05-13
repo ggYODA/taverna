@@ -152,6 +152,16 @@
                     <a href="https://www.facebook.com/profile.php?id=100090818761634" target="_blank" rel="noopener" class="nav-link nav-link--social" title="Facebook">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h1z"/></svg>
                     </a>
+                    <div class="lang-switcher" id="langSwitcher">
+                        <button class="lang-btn" id="langBtn" title="Αλλαγή γλώσσας / Change language" aria-label="Language">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </button>
+                        <div class="lang-dropdown" id="langDropdown">
+                            <button class="lang-option active" data-lang="el">🇬🇷 Ελληνικά</button>
+                            <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -311,10 +321,10 @@
 
                     <!-- Долма -->
                     <div class="menu-card">
-                        <div class="menu-card-img"><img src="images/Screenshot 2026-03-04 094351.png" alt="Долма ручной работы с дзадзики — Armellada Taverna" loading="lazy"></div>
+                        <div class="menu-card-img"><img src="images/Screenshot 2026-03-04 094351.png" alt="Ντολμαδάκια χειροποίητα — Armellada Taverna" loading="lazy"></div>
                         <div class="menu-card-body">
-                            <h3>Dolmadakia (ручная работа)</h3>
-                            <p class="menu-card-desc">Рулетики из виноградных листьев ручной работы с фетой</p>
+                            <h3>Ντολμαδάκια χειροποίητα</h3>
+                            <p class="menu-card-desc">Handmade vine leaf rolls with feta cheese</p>
                             <span class="menu-card-price">5.50€</span>
                         </div>
                     </div>
@@ -840,6 +850,132 @@
         var s = document.createElement('script');
         s.src = 'js/main.js?v=' + Date.now();
         document.body.appendChild(s);
+    </script>
+    <script>
+    // ===== LANGUAGE SWITCHER =====
+    const LANGS = {
+        el: {
+            'nav-home': 'Αρχική', 'nav-menu': 'Μενού', 'nav-reviews': 'Κριτικές',
+            'nav-about': 'Σχετικά', 'nav-contact': 'Επικοινωνία',
+            'hero-location': 'Νέα Μάκρη, Ελλάδα',
+            'hero-subtitle': 'Αυθεντική ελληνική κουζίνα με θέα στη θάλασσα.<br><span style="font-size:0.85em;opacity:0.8">Fresh seafood · Local wines · Mediterranean atmosphere</span>',
+            'hero-btn-book': 'Κράτηση Τραπεζιού / Book a Table',
+            'hero-btn-menu': 'Δείτε το Μενού / View Menu',
+            'section-tag-menu': 'Μενού', 'section-title-menu': 'Μενού — Φρέσκα Θαλασσινά & Ελληνική Κουζίνα',
+            'section-tag-reviews': 'Κριτικές', 'section-title-reviews': 'Κριτικές Επισκεπτών — Armellada Taverna',
+            'section-tag-about': 'Σχετικά με εμάς', 'section-title-about': 'Armellada — Αυθεντική Ελληνική Ταβέρνα στη Νέα Μάκρη',
+            'section-tag-contact': 'Επικοινωνία', 'section-title-contact': 'Σας Περιμένουμε — Αεροπορίας 80, Νέα Μάκρη',
+            'contact-title-addr': 'Διεύθυνση / Address', 'contact-title-phone': 'Τηλέφωνο / Phone',
+            'contact-title-hours': 'Ωράριο / Hours', 'footer-copy': '© 2026 Armellada Taverna. Με επιφύλαξη παντός δικαιώματος / All rights reserved.'
+        },
+        en: {
+            'nav-home': 'Home', 'nav-menu': 'Menu', 'nav-reviews': 'Reviews',
+            'nav-about': 'About', 'nav-contact': 'Contact',
+            'hero-location': 'Nea Makri, Greece',
+            'hero-subtitle': 'Authentic Greek cuisine with a sea view.<br><span style="font-size:0.85em;opacity:0.8">Fresh seafood · Local wines · Mediterranean atmosphere</span>',
+            'hero-btn-book': 'Book a Table',
+            'hero-btn-menu': 'View Menu',
+            'section-tag-menu': 'Menu', 'section-title-menu': 'Menu — Fresh Seafood & Greek Cuisine',
+            'section-tag-reviews': 'Reviews', 'section-title-reviews': 'Guest Reviews — Armellada Taverna',
+            'section-tag-about': 'About us', 'section-title-about': 'Armellada — Authentic Greek Taverna in Nea Makri',
+            'section-tag-contact': 'Contact', 'section-title-contact': 'Welcome — Aeroporias 80, Nea Makri',
+            'contact-title-addr': 'Address', 'contact-title-phone': 'Phone',
+            'contact-title-hours': 'Opening Hours', 'footer-copy': '© 2026 Armellada Taverna. All rights reserved.'
+        },
+        ru: {
+            'nav-home': 'Главная', 'nav-menu': 'Меню', 'nav-reviews': 'Отзывы',
+            'nav-about': 'О нас', 'nav-contact': 'Контакты',
+            'hero-location': 'Неа Макри, Греция',
+            'hero-subtitle': 'Аутентичная греческая кухня с видом на море.<br><span style="font-size:0.85em;opacity:0.8">Свежие морепродукты · Местные вина · Средиземноморская атмосфера</span>',
+            'hero-btn-book': 'Забронировать стол',
+            'hero-btn-menu': 'Смотреть меню',
+            'section-tag-menu': 'Меню', 'section-title-menu': 'Наше меню — свежие морепродукты и греческая кухня',
+            'section-tag-reviews': 'Отзывы', 'section-title-reviews': 'Отзывы гостей — Armellada Taverna',
+            'section-tag-about': 'О нас', 'section-title-about': 'Armellada — аутентичная греческая таверна в Неа Макри',
+            'section-tag-contact': 'Контакты', 'section-title-contact': 'Ждём вас — Aeroporias 80, Nea Makri',
+            'contact-title-addr': 'Адрес', 'contact-title-phone': 'Телефон',
+            'contact-title-hours': 'Режим работы', 'footer-copy': '© 2026 Armellada Taverna. Все права защищены.'
+        }
+    };
+
+    // Map data-lang-key to DOM elements
+    function applyLang(lang) {
+        const t = LANGS[lang];
+        if (!t) return;
+        document.querySelectorAll('[data-lang-key]').forEach(el => {
+            const key = el.getAttribute('data-lang-key');
+            if (t[key] !== undefined) el.innerHTML = t[key];
+        });
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+        localStorage.setItem('armelladaLang', lang);
+    }
+
+    // Add data-lang-key to elements on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', function() {
+        const map = [
+            ['a[href="#hero"].nav-link', 'nav-home'],
+            ['a[href="#menu"].nav-link', 'nav-menu'],
+            ['a[href="#reviews"].nav-link', 'nav-reviews'],
+            ['a[href="#about"].nav-link', 'nav-about'],
+            ['a[href="#contact"].nav-link', 'nav-contact'],
+        ];
+        map.forEach(([sel, key]) => {
+            const el = document.querySelector(sel);
+            if (el) el.setAttribute('data-lang-key', key);
+        });
+
+        // Hero
+        const heroLoc = document.querySelector('.hero-badge');
+        if (heroLoc) heroLoc.setAttribute('data-lang-key', 'hero-location');
+        const heroSub = document.querySelector('.hero-subtitle');
+        if (heroSub) heroSub.setAttribute('data-lang-key', 'hero-subtitle');
+        const heroBook = document.querySelector('.btn--primary.btn--round');
+        if (heroBook) heroBook.setAttribute('data-lang-key', 'hero-btn-book');
+        const heroMenuBtn = document.querySelector('a[href="#menu"].btn--outline');
+        if (heroMenuBtn) heroMenuBtn.setAttribute('data-lang-key', 'hero-btn-menu');
+
+        // Sections - use section-tag and section-title by section id
+        const sectionMap = { menu: 'menu', reviews: 'reviews', about: 'about', contact: 'contact' };
+        Object.entries(sectionMap).forEach(([id, key]) => {
+            const sec = document.getElementById(id);
+            if (!sec) return;
+            const tag = sec.querySelector('.section-tag');
+            if (tag) tag.setAttribute('data-lang-key', 'section-tag-' + key);
+            const title = sec.querySelector('.section-title');
+            if (title) title.setAttribute('data-lang-key', 'section-title-' + key);
+        });
+
+        // Contact titles
+        const contactCards = document.querySelectorAll('.contact-card h3');
+        const contactKeys = ['contact-title-addr', 'contact-title-phone', 'contact-title-hours'];
+        contactCards.forEach((el, i) => { if (contactKeys[i]) el.setAttribute('data-lang-key', contactKeys[i]); });
+
+        // Footer copy
+        const footerCopy = document.querySelector('.footer-copy');
+        if (footerCopy) footerCopy.setAttribute('data-lang-key', 'footer-copy');
+
+        // Restore saved language
+        const saved = localStorage.getItem('armelladaLang') || 'el';
+        applyLang(saved);
+
+        // Dropdown toggle
+        const langBtn = document.getElementById('langBtn');
+        const langDropdown = document.getElementById('langDropdown');
+        langBtn && langBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            langDropdown.classList.toggle('open');
+        });
+        document.addEventListener('click', function() { langDropdown && langDropdown.classList.remove('open'); });
+        document.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                applyLang(this.getAttribute('data-lang'));
+                langDropdown.classList.remove('open');
+            });
+        });
+    });
     </script>
 
 
