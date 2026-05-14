@@ -238,6 +238,13 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     transition: all 0.3s ease;
     flex-shrink: 0;
 }
+.nav-link--social svg {
+    fill: #FFFFFF;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    display: block;
+}
 .nav-link--social:hover {
     color: var(--white) !important;
     background: rgba(27, 58, 92, 0.9) !important;
