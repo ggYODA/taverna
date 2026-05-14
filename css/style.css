@@ -239,7 +239,8 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
     flex-shrink: 0;
 }
 .nav-link--social svg {
-    fill: #FFFFFF;
+    stroke: #FFFFFF;
+    fill: none;
     width: 18px;
     height: 18px;
     flex-shrink: 0;
