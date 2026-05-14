@@ -230,11 +230,13 @@ a { text-decoration: none; color: inherit; transition: all 0.3s var(--ease-smoot
 .nav-link--social {
     display: flex; align-items: center; justify-content: center;
     width: 36px; height: 36px;
+    padding: 0 !important;
     color: var(--white) !important;
     background: rgba(27, 58, 92, 0.65) !important;
     border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.3);
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 .nav-link--social:hover {
     color: var(--white) !important;
