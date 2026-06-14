@@ -487,7 +487,7 @@ window.ARMELLADA_LANGS = {
     'fullmenu-ouzo': '🏺 Uzo & Tsipuro',
     'fullmenu-dessert': '🍊 Anuts (Nver)',
     'fullmenu-dessert-note': 'Mervoum anvchar verjin uteliqi hamar',
-  }
+  },
 
   en: {
     'nav-home': 'Home', 'nav-menu': 'Menu', 'nav-reviews': 'Reviews', 'nav-about': 'About', 'nav-contact': 'Contact',
